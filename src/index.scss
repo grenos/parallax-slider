@@ -5,6 +5,15 @@
 @import "./styles/base/base"; //components
 //layout
 
+:root {
+	--ratio: 0.5;
+	--reverse-ratio: 2;
+	--container-width: 15vw;
+	--container-height: 100vh;
+	--font1-sizeVW: 20vh;
+	--font1-sizeVH: calc(var(--ratio) * 15vw);
+}
+
 body,
 html {
 	position: relative;
@@ -38,7 +47,7 @@ p {
 
 .swiper-container-h {
 	margin: 0;
-	width: 80%;
+	width: 85%;
 	height: 100%;
 
 	.swiper-slide {
@@ -49,24 +58,33 @@ p {
 }
 
 .swiper-container-v {
-	width: 20%;
+	width: 15%;
 	height: 100%;
+	background-color: rgb(17,23,29);
 
 	.swiper-slide {
+		height: 537vh;
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		background: #34495e;
+		align-items: flex-start;
+		background-color: transparent;
 
 		.swiper-slide-v__inner {
-			height: 100vh;
+			// height: 100%;
+			width: var(--container-width);
+			height: calc(var(--ratio) * var(--container-width));
+			max-width: calc(var(--reverse-ratio) * var(--container-height));
+			max-height: var(--container-height);
 
 			h1 {
 				writing-mode: vertical-rl;
 				text-orientation: sideways;
-				font-size: 9em;
+				// font-size: 6vw;
+				font-size: var(--font1-sizeVW);
+				line-height: calc(var(--font1-sizeVW) * 1.5);
 				margin: 0;
-				letter-spacing: 0;
+				color: white;
+				white-space: nowrap;
 			}
 		}
 	}

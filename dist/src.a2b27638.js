@@ -30324,6 +30324,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var plugins = [_all.TweenMax, _all.TimelineMax, _all.CSSPlugin];
 // import js module files
 // import './scripts/animations/videoModal';
+var _wh = window.innerHeight;
+var _ww = window.innerWidth;
 var swiperHorizontal = new _swiper.default('.swiper-container-h', {
   speed: 1800,
   // loop: true,
@@ -30468,12 +30470,10 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
       });
     }
   });
-  var isActiveVer = swiperVertical.activeIndex;
-  var wasActiveVer = swiperVertical.previousIndex; // const nextSlideVer = swiperVertical.slides[isActive + 1];
-  // console.log(isActiveVer);
-
-  console.log(wasActiveVer);
-  swiperVertical.slideNext(1800);
+  var slideV = document.querySelectorAll('.swiper-slide-v');
+  slideV.forEach(function (item) {
+    filmSlide(item);
+  });
 });
 swiperHorizontal.on('slidePrevTransitionStart', function () {
   var isActive = swiperHorizontal.activeIndex;
@@ -30600,7 +30600,10 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
       });
     }
   });
-  swiperVertical.slideNext(1800);
+  var slideV = document.querySelectorAll('.swiper-slide-v');
+  slideV.forEach(function (item) {
+    filmSlide(item);
+  });
 });
 var swiperVertical = new _swiper.default('.swiper-container-v', {
   direction: 'vertical',
@@ -30610,9 +30613,17 @@ var swiperVertical = new _swiper.default('.swiper-container-v', {
   simulateTouch: false,
   spaceBetween: 0,
   slideDuplicateClass: 'swiper-slide-duplicate-v'
-}); // swiperHorizontal.on('reachEnd', function() {
+});
+
+var filmSlide = function filmSlide(item) {
+  _all.TweenMax.to(item, 2, {
+    y: '-=600',
+    ease: Power2.easeOut,
+    onComplete: function onComplete() {}
+  });
+}; // swiperHorizontal.on('reachEnd', function() {
 //
-// 	setTimeout(() => {
+//
 // 		var timeline = new TimelineLite();
 //
 // 		const wh = window.innerHeight;
@@ -30629,8 +30640,6 @@ var swiperVertical = new _swiper.default('.swiper-container-v', {
 // 				timeline.play(0, false);
 // 			}
 // 		});
-// 	}, 2000);
-//
 //
 //
 //
@@ -30662,7 +30671,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50003" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50430" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

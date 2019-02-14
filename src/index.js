@@ -20,6 +20,8 @@ import addIndicators from '../node_modules/scrollmagic/scrollmagic/uncompressed/
 // import './scripts/animations/videoModal';
 
 
+const _wh = window.innerHeight;
+const _ww = window.innerWidth;
 
 
 var swiperHorizontal = new Swiper('.swiper-container-h', {
@@ -185,14 +187,12 @@ swiperHorizontal.on('slideNextTransitionStart', function() {
 	})
 
 
-	const isActiveVer = swiperVertical.activeIndex;
-	const wasActiveVer = swiperVertical.previousIndex;
-	// const nextSlideVer = swiperVertical.slides[isActive + 1];
+	const slideV = document.querySelectorAll('.swiper-slide-v');
+		slideV.forEach(item => {
+			filmSlide(item);
+		})
 
-	// console.log(isActiveVer);
-	console.log(wasActiveVer);
 
-	swiperVertical.slideNext(1800)
 
 });
 
@@ -335,7 +335,10 @@ swiperHorizontal.on('slidePrevTransitionStart', function() {
 		}
 	})
 
-swiperVertical.slideNext(1800)
+	const slideV = document.querySelectorAll('.swiper-slide-v');
+		slideV.forEach(item => {
+			filmSlide(item);
+		})
 
 });
 
@@ -350,9 +353,16 @@ var swiperVertical = new Swiper('.swiper-container-v', {
 	slideDuplicateClass: 'swiper-slide-duplicate-v'
 });
 
+const filmSlide = (item) => {
+				TweenMax.to(item,  2, { y: '-=600', ease: Power2.easeOut, onComplete: function() {
+				}})
+}
+
+
+
 // swiperHorizontal.on('reachEnd', function() {
 //
-// 	setTimeout(() => {
+//
 // 		var timeline = new TimelineLite();
 //
 // 		const wh = window.innerHeight;
@@ -369,8 +379,6 @@ var swiperVertical = new Swiper('.swiper-container-v', {
 // 				timeline.play(0, false);
 // 			}
 // 		});
-// 	}, 2000);
-//
 //
 //
 //
