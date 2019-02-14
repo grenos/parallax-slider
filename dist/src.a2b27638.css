@@ -1100,6 +1100,7 @@ p {
 }
 
 .slider-wrapper {
+  background-color: rgba(237, 237, 237, 0.71);
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -1121,7 +1122,7 @@ p {
 .swiper-container-v {
   width: 15%;
   height: 100%;
-  background-color: #11171d;
+  background-color: #181c29;
 }
 .swiper-container-v .swiper-slide {
   height: 537vh;
@@ -1142,7 +1143,7 @@ p {
   font-size: var(--font1-sizeVW);
   line-height: calc(var(--font1-sizeVW) * 1.5);
   margin: 0;
-  color: white;
+  color: #fff;
   white-space: nowrap;
 }
 

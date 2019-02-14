@@ -38,6 +38,7 @@ p {
 }
 
 .slider-wrapper {
+	background-color: rgba(237,237,237,.71);
 	height: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -60,7 +61,7 @@ p {
 .swiper-container-v {
 	width: 15%;
 	height: 100%;
-	background-color: rgb(17,23,29);
+	background-color: rgba(24,28,41,1);
 
 	.swiper-slide {
 		height: 537vh;
@@ -79,11 +80,10 @@ p {
 			h1 {
 				writing-mode: vertical-rl;
 				text-orientation: sideways;
-				// font-size: 6vw;
 				font-size: var(--font1-sizeVW);
 				line-height: calc(var(--font1-sizeVW) * 1.5);
 				margin: 0;
-				color: white;
+				color: #fff;
 				white-space: nowrap;
 			}
 		}

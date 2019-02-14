@@ -30613,7 +30613,12 @@ var swiperVertical = new _swiper.default('.swiper-container-v', {
   simulateTouch: false,
   spaceBetween: 0,
   slideDuplicateClass: 'swiper-slide-duplicate-v'
-});
+}); // https://greensock.com/forums/topic/8538-cant-get-div-to-move-left-mulitiple-times-on-click-function/
+// y needs to change so y is devideable by horizonatl slides
+// y = each horizontal slide lenght
+
+var horizonatlIndex = swiperHorizontal.slides.length; //current number of horizonatl slides
+// parent div needs a fixed px height .swiper-slide
 
 var filmSlide = function filmSlide(item) {
   _all.TweenMax.to(item, 2, {
@@ -30621,7 +30626,11 @@ var filmSlide = function filmSlide(item) {
     ease: Power2.easeOut,
     onComplete: function onComplete() {}
   });
-}; // swiperHorizontal.on('reachEnd', function() {
+}; // const filmSlide = (item) => {
+// 				TweenMax.to(item,  2, { y: '-=600', ease: Power2.easeOut, onComplete: function() {
+// 				}})
+// }
+// swiperHorizontal.on('reachEnd', function() {
 //
 //
 // 		var timeline = new TimelineLite();
@@ -30671,7 +30680,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50430" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50003" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

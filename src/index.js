@@ -353,10 +353,25 @@ var swiperVertical = new Swiper('.swiper-container-v', {
 	slideDuplicateClass: 'swiper-slide-duplicate-v'
 });
 
+
+
+
+// https://greensock.com/forums/topic/8538-cant-get-div-to-move-left-mulitiple-times-on-click-function/
+// y needs to change so y is devideable by horizonatl slides
+// y = each horizontal slide lenght
+const horizonatlIndex = swiperHorizontal.slides.length; //current number of horizonatl slides
+// parent div needs a fixed px height .swiper-slide
 const filmSlide = (item) => {
 				TweenMax.to(item,  2, { y: '-=600', ease: Power2.easeOut, onComplete: function() {
 				}})
 }
+
+
+
+// const filmSlide = (item) => {
+// 				TweenMax.to(item,  2, { y: '-=600', ease: Power2.easeOut, onComplete: function() {
+// 				}})
+// }
 
 
 
