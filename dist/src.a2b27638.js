@@ -30327,6 +30327,7 @@ var plugins = [_all.TweenMax, _all.TimelineMax, _all.CSSPlugin];
 var _wh = window.innerHeight;
 var _ww = window.innerWidth;
 var swiperHorizontal = new _swiper.default('.swiper-container-h', {
+  direction: 'vertical',
   speed: 1800,
   // loop: true,
   // autoplay: {
@@ -30357,18 +30358,18 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
   img1.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 2.450, {
-        x: 400,
+        y: 400,
         ease: Elastic.easeOut.config(.5, 2)
       }, {
-        x: 0,
+        y: 0,
         ease: Elastic.easeOut.config(.5, 2)
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: -200,
+        y: -200,
         ease: Power2.easeIn
       });
     }
@@ -30376,18 +30377,18 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
   img2.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 1.950, {
-        x: 400,
+        y: 400,
         ease: Power2.easeOut
       }, {
-        x: 0,
+        y: 0,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
-      _all.TweenMax.fromTo(img, 1.2, {
-        x: 0,
+      _all.TweenMax.fromTo(img, .8, {
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: -400,
+        y: -600,
         ease: Power2.easeIn
       });
     }
@@ -30395,18 +30396,18 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
   img3.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 2.5, {
-        x: 200,
+        y: 200,
         ease: Power2.easeOut
       }, {
-        x: 0,
+        y: 0,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 1.1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: -300,
+        y: -300,
         ease: Power2.easeIn
       });
     }
@@ -30415,19 +30416,19 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 1.650, {
         opacity: 0,
-        x: 500,
+        y: 500,
         ease: Power2.easeOut
       }, {
         opacity: 1,
-        x: 0,
+        y: 0,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 0.95, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: -400,
+        y: -400,
         ease: Power2.easeIn
       });
     }
@@ -30435,18 +30436,18 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
   text2.forEach(function (text, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 2.3, {
-        x: 250,
+        y: 250,
         ease: Power3.easeOut
       }, {
-        x: 0,
+        y: 0,
         ease: Power3.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: -500,
+        y: -500,
         ease: Power2.easeIn
       });
     }
@@ -30454,25 +30455,25 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
   text3.forEach(function (text, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 2.8, {
-        x: 200,
+        y: 200,
         ease: Power2.easeOut
       }, {
-        x: 0,
+        y: 0,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: -300,
+        y: -300,
         ease: Power2.easeIn
       });
     }
   });
-  var slideV = document.querySelectorAll('.swiper-slide-v');
-  slideV.forEach(function (item) {
-    filmSlide(item);
+  var slideF = document.querySelectorAll('.swiper-slide-v');
+  slideF.forEach(function (item) {
+    filmSlideF(item);
   });
 });
 swiperHorizontal.on('slidePrevTransitionStart', function () {
@@ -30487,18 +30488,18 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
   img1.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 2.450, {
-        x: -400,
+        y: -400,
         ease: Elastic.easeOut.config(.5, 2)
       }, {
-        x: 0,
+        y: 0,
         ease: Elastic.easeOut.config(.5, 2)
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: 200,
+        y: 200,
         ease: Power2.easeIn
       });
     }
@@ -30506,18 +30507,18 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
   img2.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 1.950, {
-        x: -400,
+        y: -400,
         ease: Power2.easeOut
       }, {
-        x: 0,
+        y: 0,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: 400,
+        y: 400,
         ease: Power2.easeIn
       });
     }
@@ -30525,18 +30526,18 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
   img3.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 2.5, {
-        x: -200,
+        y: -200,
         ease: Power2.easeOut
       }, {
-        x: 0,
+        y: 0,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: 200,
+        y: 200,
         ease: Power2.easeIn
       });
     }
@@ -30545,19 +30546,19 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 1.650, {
         opacity: 0,
-        x: -500,
+        y: -500,
         ease: Power2.easeOut
       }, {
         opacity: 1,
-        x: 0,
+        y: 0,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: 300,
+        y: 300,
         ease: Power2.easeIn
       });
     }
@@ -30565,18 +30566,18 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
   text2.forEach(function (text, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 2.3, {
-        x: -250,
+        y: -250,
         ease: Power3.easeOut
       }, {
-        x: 0,
+        y: 0,
         ease: Power3.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: 300,
+        y: 300,
         ease: Power2.easeIn
       });
     }
@@ -30584,26 +30585,34 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
   text3.forEach(function (text, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 2.8, {
-        x: -200,
+        y: -200,
         ease: Power2.easeOut
       }, {
-        x: 0,
+        y: 0,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 1, {
-        x: 0,
+        y: 0,
         ease: Power2.easeIn
       }, {
-        x: 300,
+        y: 300,
         ease: Power2.easeIn
       });
     }
   });
-  var slideV = document.querySelectorAll('.swiper-slide-v');
-  slideV.forEach(function (item) {
-    filmSlide(item);
+  var slideR = document.querySelectorAll('.swiper-slide-v');
+  slideR.forEach(function (item) {
+    filmSlideR(item);
   });
+});
+swiperHorizontal.on('slideChangeTransitionStart', function () {
+  document.querySelector('.swiper-button-next').classList.add('swiper-button-disabled');
+  document.querySelector('.swiper-button-prev').classList.add('swiper-button-disabled');
+});
+swiperHorizontal.on('slideChangeTransitionEnd', function () {
+  document.querySelector('.swiper-button-next').classList.remove('swiper-button-disabled');
+  document.querySelector('.swiper-button-prev').classList.remove('swiper-button-disabled');
 });
 var swiperVertical = new _swiper.default('.swiper-container-v', {
   direction: 'vertical',
@@ -30618,19 +30627,41 @@ var swiperVertical = new _swiper.default('.swiper-container-v', {
 // y = each horizontal slide lenght
 
 var horizonatlIndex = swiperHorizontal.slides.length; //current number of horizonatl slides
-// parent div needs a fixed px height .swiper-slide
+// parent div needs a fixed px or vh height .swiper-slide
+// const slideVH = ((_wh * 37.1) / 100).toFixed(0);
 
-var filmSlide = function filmSlide(item) {
+var slideVH = (_wh * 3.36).toFixed(0);
+
+var slideMovement = (slideVH / horizonatlIndex).toFixed(0);
+var setSlideHeight = document.querySelectorAll('.swiper-slide-v');
+document.addEventListener("DOMContentLoaded", function () {
+  setSlideHeight.forEach(function (slide) {
+    slide.style.height = slideVH + 'px';
+  });
+});
+window.addEventListener('resize', function () {
+  setSlideHeight.forEach(function (slide) {
+    slide.style.height = slideVH + 'px';
+  });
+});
+
+var filmSlideF = function filmSlideF(item) {
   _all.TweenMax.to(item, 2, {
-    y: '-=600',
+    y: "-=".concat(slideMovement),
+    ease: Power2.easeOut,
+    onComplete: function onComplete() {
+      console.log('done');
+    }
+  });
+};
+
+var filmSlideR = function filmSlideR(item) {
+  _all.TweenMax.to(item, 2, {
+    y: "+=".concat(slideMovement),
     ease: Power2.easeOut,
     onComplete: function onComplete() {}
   });
-}; // const filmSlide = (item) => {
-// 				TweenMax.to(item,  2, { y: '-=600', ease: Power2.easeOut, onComplete: function() {
-// 				}})
-// }
-// swiperHorizontal.on('reachEnd', function() {
+}; // swiperHorizontal.on('reachEnd', function() {
 //
 //
 // 		var timeline = new TimelineLite();

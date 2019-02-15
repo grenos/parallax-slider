@@ -25,6 +25,7 @@ const _ww = window.innerWidth;
 
 
 var swiperHorizontal = new Swiper('.swiper-container-h', {
+	direction: 'vertical',
 	speed: 1800,
 	// loop: true,
 	// autoplay: {
@@ -63,18 +64,18 @@ swiperHorizontal.on('slideNextTransitionStart', function() {
 	img1.forEach((img, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(img, 2.450, {
-				x: 400,
+				y: 400,
 				ease: Elastic.easeOut.config(.5, 2)
 			}, {
-				x: 0,
+				y: 0,
 				ease: Elastic.easeOut.config(.5, 2)
 			})
 		} else if (index === wasActive) {
 			TweenMax.fromTo(img, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: -200,
+				y: -200,
 				ease: Power2.easeIn
 			})
 		}
@@ -84,18 +85,18 @@ swiperHorizontal.on('slideNextTransitionStart', function() {
 	img2.forEach((img, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(img, 1.950, {
-				x: 400,
+				y: 400,
 				ease: Power2.easeOut
 			}, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeOut
 			})
 		} else if (index === wasActive) {
-			TweenMax.fromTo(img, 1.2, {
-				x: 0,
+			TweenMax.fromTo(img, .8, {
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: -400,
+				y: -600,
 				ease: Power2.easeIn
 			})
 		}
@@ -104,18 +105,18 @@ swiperHorizontal.on('slideNextTransitionStart', function() {
 	img3.forEach((img, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(img, 2.5, {
-				x: 200,
+				y: 200,
 				ease: Power2.easeOut
 			}, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeOut
 			})
 		} else if (index === wasActive) {
 			TweenMax.fromTo(img, 1.1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: -300,
+				y: -300,
 				ease: Power2.easeIn
 			})
 		}
@@ -126,19 +127,19 @@ swiperHorizontal.on('slideNextTransitionStart', function() {
 		if (index === isActive) {
 			TweenMax.fromTo(text, 1.650, {
 				opacity: 0,
-				x: 500,
+				y: 500,
 				ease: Power2.easeOut
 			}, {
 				opacity: 1,
-				x: 0,
+				y: 0,
 				ease: Power2.easeOut
 			});
 		} else if (index === wasActive) {
 			TweenMax.fromTo(text, 0.95, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: -400,
+				y: -400,
 				ease: Power2.easeIn
 			})
 		}
@@ -148,18 +149,18 @@ swiperHorizontal.on('slideNextTransitionStart', function() {
 	text2.forEach((text, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(text, 2.3, {
-				x: 250,
+				y: 250,
 				ease: Power3.easeOut
 			}, {
-				x: 0,
+				y: 0,
 				ease: Power3.easeOut
 			})
 		} else if (index === wasActive) {
 			TweenMax.fromTo(text, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: -500,
+				y: -500,
 				ease: Power2.easeIn
 			})
 		}
@@ -169,33 +170,29 @@ swiperHorizontal.on('slideNextTransitionStart', function() {
 	text3.forEach((text, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(text, 2.8, {
-				x: 200,
+				y: 200,
 				ease: Power2.easeOut
 			}, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeOut
 			});
 		} else if (index === wasActive) {
 			TweenMax.fromTo(text, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: -300,
+				y: -300,
 				ease: Power2.easeIn
 			})
 		}
 	})
 
 
-	const slideV = document.querySelectorAll('.swiper-slide-v');
-		slideV.forEach(item => {
-			filmSlide(item);
+	const slideF = document.querySelectorAll('.swiper-slide-v');
+		slideF.forEach(item => {
+			filmSlideF(item);
 		})
-
-
-
 });
-
 
 swiperHorizontal.on('slidePrevTransitionStart', function() {
 
@@ -215,18 +212,18 @@ swiperHorizontal.on('slidePrevTransitionStart', function() {
 	img1.forEach((img, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(img, 2.450, {
-				x: -400,
+				y: -400,
 				ease: Elastic.easeOut.config(.5, 2)
 			}, {
-				x: 0,
+				y: 0,
 				ease: Elastic.easeOut.config(.5, 2)
 			})
 		} else if (index === wasActive) {
 			TweenMax.fromTo(img, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: 200,
+				y: 200,
 				ease: Power2.easeIn
 			})
 		}
@@ -236,18 +233,18 @@ swiperHorizontal.on('slidePrevTransitionStart', function() {
 
 		if (index === isActive) {
 			TweenMax.fromTo(img, 1.950, {
-				x: -400,
+				y: -400,
 				ease: Power2.easeOut
 			}, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeOut
 			})
 		} else if (index === wasActive) {
 			TweenMax.fromTo(img, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: 400,
+				y: 400,
 				ease: Power2.easeIn
 			})
 		}
@@ -256,18 +253,18 @@ swiperHorizontal.on('slidePrevTransitionStart', function() {
 	img3.forEach((img, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(img, 2.5, {
-				x: -200,
+				y: -200,
 				ease: Power2.easeOut
 			}, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeOut
 			})
 		} else if (index === wasActive) {
 			TweenMax.fromTo(img, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: 200,
+				y: 200,
 				ease: Power2.easeIn
 			})
 		}
@@ -279,19 +276,19 @@ swiperHorizontal.on('slidePrevTransitionStart', function() {
 		if (index === isActive) {
 			TweenMax.fromTo(text, 1.650, {
 				opacity: 0,
-				x: -500,
+				y: -500,
 				ease: Power2.easeOut
 			}, {
 				opacity: 1,
-				x: 0,
+				y: 0,
 				ease: Power2.easeOut
 			});
 		} else if (index === wasActive) {
 			TweenMax.fromTo(text, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: 300,
+				y: 300,
 				ease: Power2.easeIn
 			})
 		}
@@ -299,18 +296,18 @@ swiperHorizontal.on('slidePrevTransitionStart', function() {
 	text2.forEach((text, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(text, 2.3, {
-				x: -250,
+				y: -250,
 				ease: Power3.easeOut
 			}, {
-				x: 0,
+				y: 0,
 				ease: Power3.easeOut
 			});
 		} else if (index === wasActive) {
 			TweenMax.fromTo(text, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: 300,
+				y: 300,
 				ease: Power2.easeIn
 			})
 		}
@@ -318,29 +315,40 @@ swiperHorizontal.on('slidePrevTransitionStart', function() {
 	text3.forEach((text, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(text, 2.8, {
-				x: -200,
+				y: -200,
 				ease: Power2.easeOut
 			}, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeOut
 			});
 		} else if (index === wasActive) {
 			TweenMax.fromTo(text, 1, {
-				x: 0,
+				y: 0,
 				ease: Power2.easeIn
 			}, {
-				x: 300,
+				y: 300,
 				ease: Power2.easeIn
 			})
 		}
 	})
 
-	const slideV = document.querySelectorAll('.swiper-slide-v');
-		slideV.forEach(item => {
-			filmSlide(item);
+	const slideR = document.querySelectorAll('.swiper-slide-v');
+		slideR.forEach(item => {
+			filmSlideR(item);
 		})
 
 });
+
+swiperHorizontal.on('slideChangeTransitionStart', function () {
+	document.querySelector('.swiper-button-next').classList.add('swiper-button-disabled');
+	document.querySelector('.swiper-button-prev').classList.add('swiper-button-disabled');
+})
+
+swiperHorizontal.on('slideChangeTransitionEnd', function () {
+	document.querySelector('.swiper-button-next').classList.remove('swiper-button-disabled');
+	document.querySelector('.swiper-button-prev').classList.remove('swiper-button-disabled');
+})
+
 
 
 var swiperVertical = new Swiper('.swiper-container-v', {
@@ -360,18 +368,36 @@ var swiperVertical = new Swiper('.swiper-container-v', {
 // y needs to change so y is devideable by horizonatl slides
 // y = each horizontal slide lenght
 const horizonatlIndex = swiperHorizontal.slides.length; //current number of horizonatl slides
-// parent div needs a fixed px height .swiper-slide
-const filmSlide = (item) => {
-				TweenMax.to(item,  2, { y: '-=600', ease: Power2.easeOut, onComplete: function() {
+// parent div needs a fixed px or vh height .swiper-slide
+
+// const slideVH = ((_wh * 37.1) / 100).toFixed(0);
+const slideVH = (_wh * 3.36).toFixed(0);
+const slideMovement = (slideVH / horizonatlIndex).toFixed(0);
+const setSlideHeight = document.querySelectorAll('.swiper-slide-v');
+
+document.addEventListener("DOMContentLoaded", () => {
+	setSlideHeight.forEach(slide => {
+		slide.style.height = slideVH + 'px';
+	})
+});
+window.addEventListener('resize', () => {
+	setSlideHeight.forEach(slide => {
+		slide.style.height = slideVH + 'px';
+	})
+})
+
+
+const filmSlideF = (item) => {
+				TweenMax.to(item,  2, { y: `-=${slideMovement}`, ease: Power2.easeOut, onComplete: function() {
+					console.log('done');
 				}})
 }
 
+const filmSlideR = (item) => {
+				TweenMax.to(item,  2, { y: `+=${slideMovement}`, ease: Power2.easeOut, onComplete: function() {
+				}})
+}
 
-
-// const filmSlide = (item) => {
-// 				TweenMax.to(item,  2, { y: '-=600', ease: Power2.easeOut, onComplete: function() {
-// 				}})
-// }
 
 
 

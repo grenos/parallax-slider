@@ -1099,6 +1099,10 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.swiper-button-disabled {
+  transition: 250ms ease-in opacity;
+}
+
 .slider-wrapper {
   background-color: rgba(237, 237, 237, 0.71);
   height: 100%;
@@ -1122,34 +1126,56 @@ p {
 .swiper-container-v {
   width: 15%;
   height: 100%;
-  background-color: #181c29;
+  background-color: rgba(216, 217, 219, 0.2);
 }
-.swiper-container-v .swiper-slide {
-  height: 537vh;
+.swiper-container-v .swiper-slide-v {
+  height: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   background-color: transparent;
 }
-.swiper-container-v .swiper-slide .swiper-slide-v__inner {
+.swiper-container-v .swiper-slide-v .swiper-slide-v__inner {
   width: var(--container-width);
   height: calc(var(--ratio) * var(--container-width));
   max-width: calc(var(--reverse-ratio) * var(--container-height));
   max-height: var(--container-height);
 }
-.swiper-container-v .swiper-slide .swiper-slide-v__inner h1 {
+.swiper-container-v .swiper-slide-v .swiper-slide-v__inner h1 {
   writing-mode: vertical-rl;
   text-orientation: sideways;
   font-size: var(--font1-sizeVW);
   line-height: calc(var(--font1-sizeVW) * 1.5);
   margin: 0;
-  color: #fff;
+  color: black;
+  -webkit-text-fill-color: rgba(186, 188, 194, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   white-space: nowrap;
 }
+.swiper-container-v .swiper-slide-v .swiper-slide-v__inner h1 span {
+  color: black;
+  -webkit-text-fill-color: black !important;
+}
 
-.swiper-container-horizontal > .swiper-pagination-progressbar,
-.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-  height: 2px;
+.swiper-button-next {
+  bottom: 5% !important;
+  transform: rotate(90deg) !important;
+  right: 50% !important;
+  top: unset !important;
+}
+
+.swiper-button-prev {
+  top: 5% !important;
+  transform: rotate(90deg) !important;
+  right: 50% !important;
+  left: unset !important;
+}
+
+.swiper-container-vertical > .swiper-pagination-progressbar {
+  width: 6px !important;
+  right: 0 !important;
+  left: auto !important;
 }
 
 .swiper-pagination-progressbar {
@@ -1157,7 +1183,10 @@ p {
 }
 
 .swiper-pagination-progressbar-fill {
-  background: black !important;
+  background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D) !important;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFC371, #FF5F6D) !important;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .swiper-button-next {
