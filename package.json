@@ -15,7 +15,7 @@
     "axios": "^0.18.0",
     "cssnano": "^4.1.8",
     "gsap": "^2.0.2",
-    "parcel-plugin-compress": "^1.0.6",
+    "parcel-plugin-compress": "^1.0.7",
     "posthtml-include": "^1.2.0",
     "sass": "^1.15.3",
     "scrollmagic": "^2.0.6",

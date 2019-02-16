@@ -104,7 +104,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -136,7 +136,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -171,17 +171,17 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/swiper/dist/css/swiper.css":[function(require,module,exports) {
+},{"./bundle-url":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/swiper/dist/css/swiper.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/index.scss":[function(require,module,exports) {
+},{"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/index.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
+},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/iphone.png":[["iphone.19da443c.png","src/media/images/iphone.png"],"src/media/images/iphone.png"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
 // disable hover on touch screens
 function hasTouch() {
   return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -190,15 +190,6 @@ function hasTouch() {
 if (!hasTouch()) {
   document.body.className += ' hasHover';
 }
-},{}],"src/media/data/images.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.imageArray = void 0;
-var imageArray = ['http://lorempixel.com/910/540/nightlife', 'http://lorempixel.com/910/540/fashion', 'http://lorempixel.com/g/910/540/city', 'http://lorempixel.com/g/910/540/abstract', 'http://lorempixel.com/g/910/540/animals', 'http://lorempixel.com/910/540/nature', 'http://lorempixel.com/910/540/people'];
-exports.imageArray = imageArray;
 },{}],"node_modules/ssr-window/dist/ssr-window.esm.js":[function(require,module,exports) {
 "use strict";
 
@@ -30306,8 +30297,6 @@ require("./index.scss");
 
 require("./scripts/helpers");
 
-var _images = require("./media/data/images");
-
 var _swiper = _interopRequireDefault(require("swiper"));
 
 var _all = require("gsap/all");
@@ -30326,43 +30315,41 @@ var plugins = [_all.TweenMax, _all.TimelineMax, _all.CSSPlugin];
 // import './scripts/animations/videoModal';
 var _wh = window.innerHeight;
 var _ww = window.innerWidth;
-var swiperHorizontal = new _swiper.default('.swiper-container-h', {
-  direction: 'vertical',
+var img1 = document.querySelectorAll(".img1-js");
+var img2 = document.querySelectorAll(".img2-js");
+var img3 = document.querySelectorAll(".img3-js");
+var text1 = document.querySelectorAll(".strapline-js");
+var text2 = document.querySelectorAll(".cta-wrapper-js");
+var text3 = document.querySelectorAll(".text-wrapper-js"); // SLIDER PROJECTS INIT
+
+var swiperHorizontal = new _swiper.default(".swiper-container-projects", {
+  direction: "vertical",
   speed: 1800,
-  // loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  // },
   noSwiping: true,
   simulateTouch: false,
   pagination: {
-    el: '.swiper-pagination',
-    type: 'progressbar'
+    el: ".swiper-pagination",
+    type: "progressbar"
   },
-  progressbarFillClass: 'swiper-pagination-progressbar-fill',
+  progressbarFillClass: "swiper-pagination-progressbar-fill",
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
-});
-swiperHorizontal.on('slideNextTransitionStart', function () {
+}); // NEXT SLIDE ANIMATION
+
+swiperHorizontal.on("slideNextTransitionStart", function () {
   var isActive = swiperHorizontal.activeIndex;
   var wasActive = swiperHorizontal.previousIndex;
   var nextSlide = swiperHorizontal.slides[isActive + 1];
-  var img1 = document.querySelectorAll('.img1-js');
-  var img2 = document.querySelectorAll('.img2-js');
-  var img3 = document.querySelectorAll('.img3-js');
-  var text1 = document.querySelectorAll('.strapline-js');
-  var text2 = document.querySelectorAll('.cta-wrapper-js');
-  var text3 = document.querySelectorAll('.text-wrapper-js');
   img1.forEach(function (img, index) {
     if (index === isActive) {
-      _all.TweenMax.fromTo(img, 2.450, {
+      _all.TweenMax.fromTo(img, 2.45, {
         y: 400,
-        ease: Elastic.easeOut.config(.5, 2)
+        ease: Elastic.easeOut.config(0.5, 2)
       }, {
         y: 0,
-        ease: Elastic.easeOut.config(.5, 2)
+        ease: Elastic.easeOut.config(0.5, 2)
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 1, {
@@ -30376,7 +30363,7 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
   });
   img2.forEach(function (img, index) {
     if (index === isActive) {
-      _all.TweenMax.fromTo(img, 1.950, {
+      _all.TweenMax.fromTo(img, 1.95, {
         y: 400,
         ease: Power2.easeOut
       }, {
@@ -30384,7 +30371,7 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
-      _all.TweenMax.fromTo(img, .8, {
+      _all.TweenMax.fromTo(img, 0.8, {
         y: 0,
         ease: Power2.easeIn
       }, {
@@ -30414,7 +30401,7 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
   });
   text1.forEach(function (text, index) {
     if (index === isActive) {
-      _all.TweenMax.fromTo(text, 1.650, {
+      _all.TweenMax.fromTo(text, 1.65, {
         opacity: 0,
         y: 500,
         ease: Power2.easeOut
@@ -30470,29 +30457,25 @@ swiperHorizontal.on('slideNextTransitionStart', function () {
         ease: Power2.easeIn
       });
     }
-  });
-  var slideF = document.querySelectorAll('.swiper-slide-v');
+  }); // move name slider
+
+  var slideF = document.querySelectorAll(".swiper-slide-name-slider");
   slideF.forEach(function (item) {
     filmSlideF(item);
   });
-});
-swiperHorizontal.on('slidePrevTransitionStart', function () {
+}); // PREVIOUS SLIDE ANIMATION
+
+swiperHorizontal.on("slidePrevTransitionStart", function () {
   var isActive = swiperHorizontal.activeIndex;
   var wasActive = swiperHorizontal.previousIndex;
-  var img1 = document.querySelectorAll('.img1-js');
-  var img2 = document.querySelectorAll('.img2-js');
-  var img3 = document.querySelectorAll('.img3-js');
-  var text1 = document.querySelectorAll('.strapline-js');
-  var text2 = document.querySelectorAll('.cta-wrapper-js');
-  var text3 = document.querySelectorAll('.text-wrapper-js');
   img1.forEach(function (img, index) {
     if (index === isActive) {
-      _all.TweenMax.fromTo(img, 2.450, {
+      _all.TweenMax.fromTo(img, 2.45, {
         y: -400,
-        ease: Elastic.easeOut.config(.5, 2)
+        ease: Elastic.easeOut.config(0.5, 2)
       }, {
         y: 0,
-        ease: Elastic.easeOut.config(.5, 2)
+        ease: Elastic.easeOut.config(0.5, 2)
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 1, {
@@ -30506,7 +30489,7 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
   });
   img2.forEach(function (img, index) {
     if (index === isActive) {
-      _all.TweenMax.fromTo(img, 1.950, {
+      _all.TweenMax.fromTo(img, 1.95, {
         y: -400,
         ease: Power2.easeOut
       }, {
@@ -30544,7 +30527,7 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
   });
   text1.forEach(function (text, index) {
     if (index === isActive) {
-      _all.TweenMax.fromTo(text, 1.650, {
+      _all.TweenMax.fromTo(text, 1.65, {
         opacity: 0,
         y: -500,
         ease: Power2.easeOut
@@ -30600,57 +30583,55 @@ swiperHorizontal.on('slidePrevTransitionStart', function () {
         ease: Power2.easeIn
       });
     }
-  });
-  var slideR = document.querySelectorAll('.swiper-slide-v');
+  }); //move name slider
+
+  var slideR = document.querySelectorAll(".swiper-slide-name-slider");
   slideR.forEach(function (item) {
     filmSlideR(item);
   });
-});
-swiperHorizontal.on('slideChangeTransitionStart', function () {
-  document.querySelector('.swiper-button-next').classList.add('swiper-button-disabled');
-  document.querySelector('.swiper-button-prev').classList.add('swiper-button-disabled');
-});
-swiperHorizontal.on('slideChangeTransitionEnd', function () {
-  document.querySelector('.swiper-button-next').classList.remove('swiper-button-disabled');
-  document.querySelector('.swiper-button-prev').classList.remove('swiper-button-disabled');
-});
-var swiperVertical = new _swiper.default('.swiper-container-v', {
-  direction: 'vertical',
-  slidesPerView: 'auto',
+}); // DISABLE BUTTON ON DURING CHANGE
+
+swiperHorizontal.on("slideChangeTransitionStart", function () {
+  document.querySelector(".swiper-button-next").classList.add("swiper-button-disabled");
+  document.querySelector(".swiper-button-prev").classList.add("swiper-button-disabled");
+}); // ACTIVATE BUTTON ON AFTER CHANGE
+
+swiperHorizontal.on("slideChangeTransitionEnd", function () {
+  document.querySelector(".swiper-button-next").classList.remove("swiper-button-disabled");
+  document.querySelector(".swiper-button-prev").classList.remove("swiper-button-disabled");
+}); // SLIDER NAME INIT
+
+var swiperVertical = new _swiper.default(".swiper-container-name-slider", {
+  direction: "vertical",
+  slidesPerView: "auto",
   freeMode: true,
   loop: true,
   simulateTouch: false,
   spaceBetween: 0,
-  slideDuplicateClass: 'swiper-slide-duplicate-v'
-}); // https://greensock.com/forums/topic/8538-cant-get-div-to-move-left-mulitiple-times-on-click-function/
-// y needs to change so y is devideable by horizonatl slides
-// y = each horizontal slide lenght
-
-var horizonatlIndex = swiperHorizontal.slides.length; //current number of horizonatl slides
-// parent div needs a fixed px or vh height .swiper-slide
-// const slideVH = ((_wh * 37.1) / 100).toFixed(0);
+  slideDuplicateClass: "swiper-slide-duplicate-v"
+});
+var horizonatlIndex = swiperHorizontal.slides.length;
 
 var slideVH = (_wh * 3.36).toFixed(0);
 
 var slideMovement = (slideVH / horizonatlIndex).toFixed(0);
-var setSlideHeight = document.querySelectorAll('.swiper-slide-v');
+var setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
 document.addEventListener("DOMContentLoaded", function () {
   setSlideHeight.forEach(function (slide) {
-    slide.style.height = slideVH + 'px';
+    slide.style.height = slideVH + "px";
   });
 });
-window.addEventListener('resize', function () {
+window.addEventListener("resize", function () {
   setSlideHeight.forEach(function (slide) {
-    slide.style.height = slideVH + 'px';
+    slide.style.height = slideVH + "px";
   });
 });
 
 var filmSlideF = function filmSlideF(item) {
   _all.TweenMax.to(item, 2, {
     y: "-=".concat(slideMovement),
-    ease: Power2.easeOut,
     onComplete: function onComplete() {
-      console.log('done');
+      console.log("done");
     }
   });
 };
@@ -30658,33 +30639,10 @@ var filmSlideF = function filmSlideF(item) {
 var filmSlideR = function filmSlideR(item) {
   _all.TweenMax.to(item, 2, {
     y: "+=".concat(slideMovement),
-    ease: Power2.easeOut,
     onComplete: function onComplete() {}
   });
-}; // swiperHorizontal.on('reachEnd', function() {
-//
-//
-// 		var timeline = new TimelineLite();
-//
-// 		const wh = window.innerHeight;
-//
-// 		var wrapper = document.querySelector('.swiper-wrapper-vertical')
-// 		var slide = document.querySelectorAll('.swiper-slide-v')
-//
-// 		timeline.to(wrapper, 5 * slide.length, {
-// 			y: -wh + 'px',
-// 			ease: Linear.easeNone,
-// 			onComplete: function() {
-// 				swiperVertical.update();
-// 				swiperVertical.slideToLoop(0, 0, false);
-// 				timeline.play(0, false);
-// 			}
-// 		});
-//
-//
-//
-// })
-},{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","./media/data/images":"src/media/data/images.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+};
+},{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30711,7 +30669,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50003" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64914" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -30853,5 +30811,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
+},{}]},{},["../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
 //# sourceMappingURL=/src.a2b27638.map
