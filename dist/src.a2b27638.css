@@ -1211,17 +1211,20 @@ blockquote {
   writing-mode: vertical-rl;
   text-orientation: sideways;
   font-size: var(--font1-sizeVW);
-  line-height: calc(var(--font1-sizeVW) * 1.5);
-  margin: 0;
+  margin: auto;
   color: black;
   -webkit-text-fill-color: rgba(186, 188, 194, 0);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   white-space: nowrap;
+  line-height: var(--container-width);
 }
 .swiper-container-name-slider .swiper-slide-name-slider .swiper-slide-name-slider__inner h1 span {
   color: black;
   -webkit-text-fill-color: black !important;
+}
+.swiper-container-name-slider .swiper-slide-duplicate-active {
+  background: pink;
 }
 
 .slider-wrapper {

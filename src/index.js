@@ -309,11 +309,12 @@ var swiperVertical = new Swiper(".swiper-container-name-slider", {
 	loop: true,
 	simulateTouch: false,
 	spaceBetween: 0,
-	slideDuplicateClass: "swiper-slide-duplicate-v"
+	slideDuplicateClass: "swiper-slide-duplicate-name-slider"
 });
 
-const horizonatlIndex = swiperHorizontal.slides.length;
-const slideVH = (_wh * 3.36).toFixed(0);
+const horizonatlIndex = swiperHorizontal.slides.length + 1;
+// 3.36
+const slideVH = (_wh * 3.5).toFixed(0);
 const slideMovement = (slideVH / horizonatlIndex).toFixed(0);
 const setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
 
@@ -329,16 +330,14 @@ window.addEventListener("resize", () => {
 });
 
 const filmSlideF = item => {
-	TweenMax.to(item, 2, {
+	TweenMax.to(item, 1.8, {
 		y: `-=${slideMovement}`,
-		onComplete: function() {
-			console.log("done");
-		}
+		onComplete: function() {}
 	});
 };
 
 const filmSlideR = item => {
-	TweenMax.to(item, 2, {
+	TweenMax.to(item, 1.8, {
 		y: `+=${slideMovement}`,
 		onComplete: function() {}
 	});

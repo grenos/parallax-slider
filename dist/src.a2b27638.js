@@ -30608,11 +30608,11 @@ var swiperVertical = new _swiper.default(".swiper-container-name-slider", {
   loop: true,
   simulateTouch: false,
   spaceBetween: 0,
-  slideDuplicateClass: "swiper-slide-duplicate-v"
+  slideDuplicateClass: "swiper-slide-duplicate-name-slider"
 });
-var horizonatlIndex = swiperHorizontal.slides.length;
+var horizonatlIndex = swiperHorizontal.slides.length + 1; // 3.36
 
-var slideVH = (_wh * 3.36).toFixed(0);
+var slideVH = (_wh * 3.5).toFixed(0);
 
 var slideMovement = (slideVH / horizonatlIndex).toFixed(0);
 var setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
@@ -30628,16 +30628,14 @@ window.addEventListener("resize", function () {
 });
 
 var filmSlideF = function filmSlideF(item) {
-  _all.TweenMax.to(item, 2, {
+  _all.TweenMax.to(item, 1.8, {
     y: "-=".concat(slideMovement),
-    onComplete: function onComplete() {
-      console.log("done");
-    }
+    onComplete: function onComplete() {}
   });
 };
 
 var filmSlideR = function filmSlideR(item) {
-  _all.TweenMax.to(item, 2, {
+  _all.TweenMax.to(item, 1.8, {
     y: "+=".concat(slideMovement),
     onComplete: function onComplete() {}
   });
