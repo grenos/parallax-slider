@@ -1113,7 +1113,7 @@ body, html {
 .grid1 .slide1-img1 {
   grid-column: 2/span 2;
   grid-row: 2/span 6;
-  background: url("iphone.19da443c.png") left top no-repeat;
+  background: url("oneplus.410cd10b.png") left top no-repeat;
   background-size: contain;
 }
 .grid1 .slide1-img2 {
@@ -1189,14 +1189,14 @@ body, html {
 .grid2 .slide1-img3 {
   grid-column: 2/span 1;
   grid-row: 4/span 2;
-  background: url("iphone.19da443c.png") left top no-repeat;
+  background: url("iphone8.2f2f0dc5.png") left top no-repeat;
   background-size: contain;
   z-index: 10;
 }
 .grid2 .slide1-img4 {
   grid-column: 2/span 4;
   grid-row: 3/span 3;
-  background: url("air.7cb5d5ce.png") left top no-repeat;
+  background: url("mac.7f5152d3.png") left top no-repeat;
   background-size: contain;
 }
 .grid2 .info {

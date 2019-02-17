@@ -5,14 +5,14 @@
 	.slide1-img3 {
 	  grid-column: 2 / span 1;
 	  grid-row: 4 / span 2;
-		background: url("/src/media/images/iphone.png") left top no-repeat;
+		background: url("/src/media/images/iphone8.png") left top no-repeat;
 		background-size: contain;
 		z-index: 10;
 	}
 	.slide1-img4 {
 	  grid-column: 2 / span 4;
 	  grid-row: 3 / span 3;
-		background: url("/src/media/images/air.png") left top no-repeat;
+		background: url("/src/media/images/mac.png") left top no-repeat;
 		background-size: contain;
 	}
 	.info {
@@ -25,7 +25,7 @@
 			  margin-left: 0;
 			  margin-right: 0;
 			}
-	}
+		}
 	.title {
 		grid-column: 4 / span 2;
 		grid-row: 4 / span 1;
