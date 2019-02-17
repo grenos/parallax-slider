@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: flex-start;
     background-color: transparent;
-		// padding: 20vh 0;
+		margin-top: 30px;
 
     .swiper-slide-name-slider__inner {
       width: var(--container-width);
@@ -36,7 +36,4 @@
       }
     }
   }
-	.swiper-slide-duplicate-active{
-		background: pink;
-	}
 }

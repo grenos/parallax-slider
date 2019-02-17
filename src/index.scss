@@ -13,12 +13,15 @@
 // sass base
 @import "./styles/base/base";
 
-//components
-@import "./styles/components/swiper-buttons";
-
 //layout
 @import "./styles/layout/grid-1";
+@import "./styles/layout/grid-2";
 @import "./styles/layout/name-slider";
+
+//components
+@import "./styles/components/swiper-buttons";
+@import "./styles/components/button__cta";
+
 
 
 .slider-wrapper {

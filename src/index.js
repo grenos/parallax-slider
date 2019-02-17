@@ -17,11 +17,9 @@ const _ww = window.innerWidth;
 
 const img1 = document.querySelectorAll(".img1-js");
 const img2 = document.querySelectorAll(".img2-js");
-const img3 = document.querySelectorAll(".img3-js");
 
-const text1 = document.querySelectorAll(".strapline-js");
-const text2 = document.querySelectorAll(".cta-wrapper-js");
-const text3 = document.querySelectorAll(".text-wrapper-js");
+const info = document.querySelectorAll(".info-js");
+const title = document.querySelectorAll(".title-js");
 
 // SLIDER PROJECTS INIT
 var swiperHorizontal = new Swiper(".swiper-container-projects", {
@@ -50,24 +48,6 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 		if (index === isActive) {
 			TweenMax.fromTo(
 				img,
-				2.45,
-				{ y: 400, ease: Elastic.easeOut.config(0.5, 2) },
-				{ y: 0, ease: Elastic.easeOut.config(0.5, 2) }
-			);
-		} else if (index === wasActive) {
-			TweenMax.fromTo(
-				img,
-				1,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: -200, ease: Power2.easeIn }
-			);
-		}
-	});
-
-	img2.forEach((img, index) => {
-		if (index === isActive) {
-			TweenMax.fromTo(
-				img,
 				1.95,
 				{ y: 400, ease: Power2.easeOut },
 				{ y: 0, ease: Power2.easeOut }
@@ -82,7 +62,7 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 		}
 	});
 
-	img3.forEach((img, index) => {
+	img2.forEach((img, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(
 				img,
@@ -100,7 +80,7 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 		}
 	});
 
-	text1.forEach((text, index) => {
+	info.forEach((text, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(
 				text,
@@ -118,7 +98,7 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 		}
 	});
 
-	text2.forEach((text, index) => {
+	title.forEach((text, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(
 				text,
@@ -132,24 +112,6 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 				1,
 				{ y: 0, ease: Power2.easeIn },
 				{ y: -500, ease: Power2.easeIn }
-			);
-		}
-	});
-
-	text3.forEach((text, index) => {
-		if (index === isActive) {
-			TweenMax.fromTo(
-				text,
-				2.8,
-				{ y: 200, ease: Power2.easeOut },
-				{ y: 0, ease: Power2.easeOut }
-			);
-		} else if (index === wasActive) {
-			TweenMax.fromTo(
-				text,
-				1,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: -300, ease: Power2.easeIn }
 			);
 		}
 	});
@@ -170,24 +132,6 @@ swiperHorizontal.on("slidePrevTransitionStart", function() {
 		if (index === isActive) {
 			TweenMax.fromTo(
 				img,
-				2.45,
-				{ y: -400, ease: Elastic.easeOut.config(0.5, 2) },
-				{ y: 0, ease: Elastic.easeOut.config(0.5, 2) }
-			);
-		} else if (index === wasActive) {
-			TweenMax.fromTo(
-				img,
-				1,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: 200, ease: Power2.easeIn }
-			);
-		}
-	});
-
-	img2.forEach((img, index) => {
-		if (index === isActive) {
-			TweenMax.fromTo(
-				img,
 				1.95,
 				{ y: -400, ease: Power2.easeOut },
 				{ y: 0, ease: Power2.easeOut }
@@ -202,7 +146,7 @@ swiperHorizontal.on("slidePrevTransitionStart", function() {
 		}
 	});
 
-	img3.forEach((img, index) => {
+	img2.forEach((img, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(
 				img,
@@ -220,7 +164,7 @@ swiperHorizontal.on("slidePrevTransitionStart", function() {
 		}
 	});
 
-	text1.forEach((text, index) => {
+	info.forEach((text, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(
 				text,
@@ -238,31 +182,13 @@ swiperHorizontal.on("slidePrevTransitionStart", function() {
 		}
 	});
 
-	text2.forEach((text, index) => {
+	title.forEach((text, index) => {
 		if (index === isActive) {
 			TweenMax.fromTo(
 				text,
 				2.3,
 				{ y: -250, ease: Power3.easeOut },
 				{ y: 0, ease: Power3.easeOut }
-			);
-		} else if (index === wasActive) {
-			TweenMax.fromTo(
-				text,
-				1,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: 300, ease: Power2.easeIn }
-			);
-		}
-	});
-
-	text3.forEach((text, index) => {
-		if (index === isActive) {
-			TweenMax.fromTo(
-				text,
-				2.8,
-				{ y: -200, ease: Power2.easeOut },
-				{ y: 0, ease: Power2.easeOut }
 			);
 		} else if (index === wasActive) {
 			TweenMax.fromTo(
@@ -304,16 +230,13 @@ swiperHorizontal.on("slideChangeTransitionEnd", function() {
 // SLIDER NAME INIT
 var swiperVertical = new Swiper(".swiper-container-name-slider", {
 	direction: "vertical",
-	slidesPerView: "auto",
-	freeMode: true,
-	loop: true,
 	simulateTouch: false,
-	spaceBetween: 0,
-	slideDuplicateClass: "swiper-slide-duplicate-name-slider"
+	spaceBetween: 0
 });
 
+// NAME SLIDER ANIMATION
+// +1 because 1st project-slide is already 'on'
 const horizonatlIndex = swiperHorizontal.slides.length + 1;
-// 3.36
 const slideVH = (_wh * 3.5).toFixed(0);
 const slideMovement = (slideVH / horizonatlIndex).toFixed(0);
 const setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");

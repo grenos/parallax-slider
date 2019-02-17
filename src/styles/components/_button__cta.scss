@@ -1,0 +1,41 @@
+.cta{
+	@include flex-box(flex, null, null, center, center);
+	.cta-web{
+		margin: 0 15px;
+		a{
+			.cta-web__button{
+				width: 140px;
+				background-color: transparent;
+				border: none;
+				border-top: 2px solid #000;
+				&:hover{
+					cursor: pointer;
+				}
+				.cta-web__text{
+					margin: 13px 0;
+					font-family: 'inter_regular';
+					text-transform: uppercase;
+				}
+			}
+	}
+	}
+	.cta-git{
+		margin: 0 15px;
+		a{
+			.cta-git__button{
+				width: 140px;
+				background-color: transparent;
+				border: none;
+				border-bottom: 2px solid #000;
+				&:hover{
+					cursor: pointer;
+				}
+				.cta-git__text {
+					margin: 13px 0;
+					font-family: 'inter_regular';
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}

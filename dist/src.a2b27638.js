@@ -181,7 +181,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/iphone.png":[["iphone.19da443c.png","src/media/images/iphone.png"],"src/media/images/iphone.png"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
+},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/iphone.png":[["iphone.19da443c.png","src/media/images/iphone.png"],"src/media/images/iphone.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/air.png":[["air.7cb5d5ce.png","src/media/images/air.png"],"src/media/images/air.png"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
 // disable hover on touch screens
 function hasTouch() {
   return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -30317,10 +30317,8 @@ var _wh = window.innerHeight;
 var _ww = window.innerWidth;
 var img1 = document.querySelectorAll(".img1-js");
 var img2 = document.querySelectorAll(".img2-js");
-var img3 = document.querySelectorAll(".img3-js");
-var text1 = document.querySelectorAll(".strapline-js");
-var text2 = document.querySelectorAll(".cta-wrapper-js");
-var text3 = document.querySelectorAll(".text-wrapper-js"); // SLIDER PROJECTS INIT
+var info = document.querySelectorAll(".info-js");
+var title = document.querySelectorAll(".title-js"); // SLIDER PROJECTS INIT
 
 var swiperHorizontal = new _swiper.default(".swiper-container-projects", {
   direction: "vertical",
@@ -30344,25 +30342,6 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
   var nextSlide = swiperHorizontal.slides[isActive + 1];
   img1.forEach(function (img, index) {
     if (index === isActive) {
-      _all.TweenMax.fromTo(img, 2.45, {
-        y: 400,
-        ease: Elastic.easeOut.config(0.5, 2)
-      }, {
-        y: 0,
-        ease: Elastic.easeOut.config(0.5, 2)
-      });
-    } else if (index === wasActive) {
-      _all.TweenMax.fromTo(img, 1, {
-        y: 0,
-        ease: Power2.easeIn
-      }, {
-        y: -200,
-        ease: Power2.easeIn
-      });
-    }
-  });
-  img2.forEach(function (img, index) {
-    if (index === isActive) {
       _all.TweenMax.fromTo(img, 1.95, {
         y: 400,
         ease: Power2.easeOut
@@ -30380,7 +30359,7 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
       });
     }
   });
-  img3.forEach(function (img, index) {
+  img2.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 2.5, {
         y: 200,
@@ -30399,7 +30378,7 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
       });
     }
   });
-  text1.forEach(function (text, index) {
+  info.forEach(function (text, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 1.65, {
         opacity: 0,
@@ -30420,7 +30399,7 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
       });
     }
   });
-  text2.forEach(function (text, index) {
+  title.forEach(function (text, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 2.3, {
         y: 250,
@@ -30438,25 +30417,6 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
         ease: Power2.easeIn
       });
     }
-  });
-  text3.forEach(function (text, index) {
-    if (index === isActive) {
-      _all.TweenMax.fromTo(text, 2.8, {
-        y: 200,
-        ease: Power2.easeOut
-      }, {
-        y: 0,
-        ease: Power2.easeOut
-      });
-    } else if (index === wasActive) {
-      _all.TweenMax.fromTo(text, 1, {
-        y: 0,
-        ease: Power2.easeIn
-      }, {
-        y: -300,
-        ease: Power2.easeIn
-      });
-    }
   }); // move name slider
 
   var slideF = document.querySelectorAll(".swiper-slide-name-slider");
@@ -30469,25 +30429,6 @@ swiperHorizontal.on("slidePrevTransitionStart", function () {
   var isActive = swiperHorizontal.activeIndex;
   var wasActive = swiperHorizontal.previousIndex;
   img1.forEach(function (img, index) {
-    if (index === isActive) {
-      _all.TweenMax.fromTo(img, 2.45, {
-        y: -400,
-        ease: Elastic.easeOut.config(0.5, 2)
-      }, {
-        y: 0,
-        ease: Elastic.easeOut.config(0.5, 2)
-      });
-    } else if (index === wasActive) {
-      _all.TweenMax.fromTo(img, 1, {
-        y: 0,
-        ease: Power2.easeIn
-      }, {
-        y: 200,
-        ease: Power2.easeIn
-      });
-    }
-  });
-  img2.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 1.95, {
         y: -400,
@@ -30506,7 +30447,7 @@ swiperHorizontal.on("slidePrevTransitionStart", function () {
       });
     }
   });
-  img3.forEach(function (img, index) {
+  img2.forEach(function (img, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 2.5, {
         y: -200,
@@ -30525,7 +30466,7 @@ swiperHorizontal.on("slidePrevTransitionStart", function () {
       });
     }
   });
-  text1.forEach(function (text, index) {
+  info.forEach(function (text, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 1.65, {
         opacity: 0,
@@ -30546,7 +30487,7 @@ swiperHorizontal.on("slidePrevTransitionStart", function () {
       });
     }
   });
-  text2.forEach(function (text, index) {
+  title.forEach(function (text, index) {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 2.3, {
         y: -250,
@@ -30554,25 +30495,6 @@ swiperHorizontal.on("slidePrevTransitionStart", function () {
       }, {
         y: 0,
         ease: Power3.easeOut
-      });
-    } else if (index === wasActive) {
-      _all.TweenMax.fromTo(text, 1, {
-        y: 0,
-        ease: Power2.easeIn
-      }, {
-        y: 300,
-        ease: Power2.easeIn
-      });
-    }
-  });
-  text3.forEach(function (text, index) {
-    if (index === isActive) {
-      _all.TweenMax.fromTo(text, 2.8, {
-        y: -200,
-        ease: Power2.easeOut
-      }, {
-        y: 0,
-        ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 1, {
@@ -30603,14 +30525,12 @@ swiperHorizontal.on("slideChangeTransitionEnd", function () {
 
 var swiperVertical = new _swiper.default(".swiper-container-name-slider", {
   direction: "vertical",
-  slidesPerView: "auto",
-  freeMode: true,
-  loop: true,
   simulateTouch: false,
-  spaceBetween: 0,
-  slideDuplicateClass: "swiper-slide-duplicate-name-slider"
-});
-var horizonatlIndex = swiperHorizontal.slides.length + 1; // 3.36
+  spaceBetween: 0
+}); // NAME SLIDER ANIMATION
+// +1 because 1st project-slide is already 'on'
+
+var horizonatlIndex = swiperHorizontal.slides.length + 1;
 
 var slideVH = (_wh * 3.5).toFixed(0);
 
@@ -30667,7 +30587,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64914" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64038" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
