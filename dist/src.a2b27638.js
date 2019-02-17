@@ -30318,7 +30318,9 @@ var _ww = window.innerWidth;
 var img1 = document.querySelectorAll(".img1-js");
 var img2 = document.querySelectorAll(".img2-js");
 var info = document.querySelectorAll(".info-js");
-var title = document.querySelectorAll(".title-js"); // SLIDER PROJECTS INIT
+var title = document.querySelectorAll(".title-js");
+var ctaWeb = document.querySelectorAll(".cta-web");
+var ctaGit = document.querySelectorAll(".cta-git"); // SLIDER PROJECTS INIT
 
 var swiperHorizontal = new _swiper.default(".swiper-container-projects", {
   direction: "vertical",
@@ -30417,6 +30419,44 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
         ease: Power2.easeIn
       });
     }
+  });
+  ctaWeb.forEach(function (cta, index) {
+    if (index === isActive) {
+      _all.TweenMax.fromTo(cta, 1.95, {
+        y: 450,
+        ease: Power3.easeOut
+      }, {
+        y: 0,
+        ease: Power3.easeOut
+      });
+    } else if (index === wasActive) {
+      _all.TweenMax.fromTo(cta, 1, {
+        y: 0,
+        ease: Power2.easeIn
+      }, {
+        y: -500,
+        ease: Power2.easeIn
+      });
+    }
+  });
+  ctaGit.forEach(function (cta, index) {
+    if (index === isActive) {
+      _all.TweenMax.fromTo(cta, 2.3, {
+        y: 300,
+        ease: Power2.easeOut
+      }, {
+        y: 0,
+        ease: Power2.easeOut
+      });
+    } else if (index === wasActive) {
+      _all.TweenMax.fromTo(cta, 1.1, {
+        y: 0,
+        ease: Power2.easeIn
+      }, {
+        y: -300,
+        ease: Power2.easeIn
+      });
+    }
   }); // move name slider
 
   var slideF = document.querySelectorAll(".swiper-slide-name-slider");
@@ -30505,6 +30545,44 @@ swiperHorizontal.on("slidePrevTransitionStart", function () {
         ease: Power2.easeIn
       });
     }
+  });
+  ctaWeb.forEach(function (cta, index) {
+    if (index === isActive) {
+      _all.TweenMax.fromTo(cta, 1.95, {
+        y: -400,
+        ease: Power2.easeOut
+      }, {
+        y: 0,
+        ease: Power2.easeOut
+      });
+    } else if (index === wasActive) {
+      _all.TweenMax.fromTo(cta, 1, {
+        y: 0,
+        ease: Power2.easeIn
+      }, {
+        y: 400,
+        ease: Power2.easeIn
+      });
+    }
+  });
+  ctaGit.forEach(function (cta, index) {
+    if (index === isActive) {
+      _all.TweenMax.fromTo(cta, 2.53, {
+        y: -300,
+        ease: Power2.easeOut
+      }, {
+        y: 0,
+        ease: Power2.easeOut
+      });
+    } else if (index === wasActive) {
+      _all.TweenMax.fromTo(cta, 1, {
+        y: 0,
+        ease: Power2.easeIn
+      }, {
+        y: 200,
+        ease: Power2.easeIn
+      });
+    }
   }); //move name slider
 
   var slideR = document.querySelectorAll(".swiper-slide-name-slider");
@@ -30587,7 +30665,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64038" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64616" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

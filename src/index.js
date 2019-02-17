@@ -21,6 +21,9 @@ const img2 = document.querySelectorAll(".img2-js");
 const info = document.querySelectorAll(".info-js");
 const title = document.querySelectorAll(".title-js");
 
+const ctaWeb = document.querySelectorAll(".cta-web");
+const ctaGit = document.querySelectorAll(".cta-git");
+
 // SLIDER PROJECTS INIT
 var swiperHorizontal = new Swiper(".swiper-container-projects", {
 	direction: "vertical",
@@ -116,6 +119,42 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 		}
 	});
 
+	ctaWeb.forEach((cta, index) => {
+		if (index === isActive) {
+			TweenMax.fromTo(
+				cta,
+				1.95,
+				{ y: 450, ease: Power3.easeOut },
+				{ y: 0, ease: Power3.easeOut }
+			);
+		} else if (index === wasActive) {
+			TweenMax.fromTo(
+				cta,
+				1,
+				{ y: 0, ease: Power2.easeIn },
+				{ y: -500, ease: Power2.easeIn }
+			);
+		}
+	});
+
+	ctaGit.forEach((cta, index) => {
+		if (index === isActive) {
+			TweenMax.fromTo(
+				cta,
+				2.3,
+				{ y: 300, ease: Power2.easeOut },
+				{ y: 0, ease: Power2.easeOut }
+			);
+		} else if (index === wasActive) {
+			TweenMax.fromTo(
+				cta,
+				1.1,
+				{ y: 0, ease: Power2.easeIn },
+				{ y: -300, ease: Power2.easeIn }
+			);
+		}
+	});
+
 	// move name slider
 	const slideF = document.querySelectorAll(".swiper-slide-name-slider");
 	slideF.forEach(item => {
@@ -196,6 +235,42 @@ swiperHorizontal.on("slidePrevTransitionStart", function() {
 				1,
 				{ y: 0, ease: Power2.easeIn },
 				{ y: 300, ease: Power2.easeIn }
+			);
+		}
+	});
+
+	ctaWeb.forEach((cta, index) => {
+		if (index === isActive) {
+			TweenMax.fromTo(
+				cta,
+				1.95,
+				{ y: -400, ease: Power2.easeOut },
+				{ y: 0, ease: Power2.easeOut }
+			);
+		} else if (index === wasActive) {
+			TweenMax.fromTo(
+				cta,
+				1,
+				{ y: 0, ease: Power2.easeIn },
+				{ y: 400, ease: Power2.easeIn }
+			);
+		}
+	});
+
+	ctaGit.forEach((cta, index) => {
+		if (index === isActive) {
+			TweenMax.fromTo(
+				cta,
+				2.53,
+				{ y: -300, ease: Power2.easeOut },
+				{ y: 0, ease: Power2.easeOut }
+			);
+		} else if (index === wasActive) {
+			TweenMax.fromTo(
+				cta,
+				1,
+				{ y: 0, ease: Power2.easeIn },
+				{ y: 200, ease: Power2.easeIn }
 			);
 		}
 	});

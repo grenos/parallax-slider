@@ -64,20 +64,23 @@
   }
 }
 
+// 1366 - 1536
 @mixin medium-screen-media {
-  @media (min-width: #{$ipad-pro-width}) and (max-width: #{$medium-pc-width - 1px}) {
+  @media (min-width: #{$small-pc-width}) and (max-width: #{$medium-pc-width}) {
     @content;
   }
 }
 
+// 1536 - 1920
 @mixin large-screen-media {
-  @media (min-width: #{$medium-pc-width}) and (max-width: #{$large-pc-width + 1}) {
+  @media (min-width: #{$medium-pc-width}) and (max-width: #{$x-large-pc-width}) {
     @content;
   }
 }
 
+// 1920 - 2560
 @mixin extra-large-screen-media {
-  @media (min-width: #{$large-pc-width + 2}) and (max-width: #{$x-large-pc-width + 1}) {
+  @media (min-width: #{$x-large-pc-width}) and (max-width: #{$xx-large-pc-width}) {
     @content;
   }
 }
