@@ -340,3 +340,31 @@ const filmSlideR = item => {
 		onComplete: function() {}
 	});
 };
+
+// CTA HOVER ANIMATION
+document.querySelectorAll('.cta-js').forEach(cta => {
+
+	const tl = new TimelineLite({paused:true});
+
+	cta.addEventListener('mouseenter', function () {
+
+		if (this.classList.contains('cta-git')){
+			tl.to(this, .3, {boxShadow: 'inset  0 -3.25em 0 0 black'}).play();
+		} else {
+			tl.to(this, .3, {boxShadow: 'inset  0 3.25em 0 0 black'}).play();
+		}
+		let text = this.querySelector('p')
+		TweenMax.to(text, .4, {color: 'white'})
+	})
+	//
+	cta.addEventListener('mouseleave', function () {
+		if (this.classList.contains('cta-git')){
+			tl.to(this, 0, {boxShadow: 'inset  0 -3.25em 0 0 black'}).reverse();
+		} else {
+			tl.to(this, 0, {boxShadow: 'inset  0 3.25em 0 0 black'}).reverse();
+		}
+		let text = this.querySelector('p')
+		TweenMax.to(text, .4, {color: 'black'})
+	})
+
+})

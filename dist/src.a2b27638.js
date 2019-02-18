@@ -30661,7 +30661,49 @@ var filmSlideR = function filmSlideR(item) {
     y: "+=".concat(slideMovement),
     onComplete: function onComplete() {}
   });
-};
+}; // CTA HOVER ANIMATION
+
+
+document.querySelectorAll('.cta-js').forEach(function (cta) {
+  var tl = new TimelineLite({
+    paused: true
+  });
+  cta.addEventListener('mouseenter', function () {
+    if (this.classList.contains('cta-git')) {
+      tl.to(this, .3, {
+        boxShadow: 'inset  0 -3.25em 0 0 black'
+      }).play();
+    } else {
+      tl.to(this, .3, {
+        boxShadow: 'inset  0 3.25em 0 0 black'
+      }).play();
+    }
+
+    var text = this.querySelector('p');
+
+    _all.TweenMax.to(text, .4, {
+      color: 'white'
+    });
+  }); //
+
+  cta.addEventListener('mouseleave', function () {
+    if (this.classList.contains('cta-git')) {
+      tl.to(this, 0, {
+        boxShadow: 'inset  0 -3.25em 0 0 black'
+      }).reverse();
+    } else {
+      tl.to(this, 0, {
+        boxShadow: 'inset  0 3.25em 0 0 black'
+      }).reverse();
+    }
+
+    var text = this.querySelector('p');
+
+    _all.TweenMax.to(text, .4, {
+      color: 'black'
+    });
+  });
+});
 },{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -30689,7 +30731,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65317" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50376" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

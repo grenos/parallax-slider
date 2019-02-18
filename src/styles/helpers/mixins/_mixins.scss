@@ -73,14 +73,14 @@
 
 // 1536 - 1920
 @mixin large-screen-media {
-  @media (min-width: #{$medium-pc-width}) and (max-width: #{$x-large-pc-width}) {
+  @media (min-width: #{$medium-pc-width}) {
     @content;
   }
 }
 
 // 1920 - 2560
 @mixin extra-large-screen-media {
-  @media (min-width: #{$x-large-pc-width}) and (max-width: #{$xx-large-pc-width}) {
+  @media (min-width: #{$x-large-pc-width}) {
     @content;
   }
 }
