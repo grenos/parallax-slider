@@ -104,7 +104,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -136,7 +136,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -171,17 +171,17 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/swiper/dist/css/swiper.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/swiper/dist/css/swiper.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/index.scss":[function(require,module,exports) {
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/index.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/oneplus.png":[["oneplus.410cd10b.png","src/media/images/oneplus.png"],"src/media/images/oneplus.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/iphone.png":[["iphone.19da443c.png","src/media/images/iphone.png"],"src/media/images/iphone.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/iphone8.png":[["iphone8.2f2f0dc5.png","src/media/images/iphone8.png"],"src/media/images/iphone8.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/mac.png":[["mac.7f5152d3.png","src/media/images/mac.png"],"src/media/images/mac.png"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
+},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"/Users/apple/Desktop/parallax-slider/src/media/images/oneplus.png":[["oneplus.410cd10b.png","src/media/images/oneplus.png"],"src/media/images/oneplus.png"],"/Users/apple/Desktop/parallax-slider/src/media/images/iphone.png":[["iphone.19da443c.png","src/media/images/iphone.png"],"src/media/images/iphone.png"],"/Users/apple/Desktop/parallax-slider/src/media/images/iphone8.png":[["iphone8.2f2f0dc5.png","src/media/images/iphone8.png"],"src/media/images/iphone8.png"],"/Users/apple/Desktop/parallax-slider/src/media/images/mac.png":[["mac.7f5152d3.png","src/media/images/mac.png"],"src/media/images/mac.png"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
 // disable hover on touch screens
 function hasTouch() {
   return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -30346,17 +30346,21 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 1.95, {
         y: 400,
+        rotation: 0.01,
         ease: Power2.easeOut
       }, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 0.8, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeIn
       }, {
         y: -600,
+        rotation: 0.01,
         ease: Power2.easeIn
       });
     }
@@ -30365,17 +30369,21 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
     if (index === isActive) {
       _all.TweenMax.fromTo(img, 2.5, {
         y: 200,
+        rotation: 0.01,
         ease: Power2.easeOut
       }, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(img, 1.1, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeIn
       }, {
         y: -300,
+        rotation: 0.01,
         ease: Power2.easeIn
       });
     }
@@ -30385,18 +30393,22 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
       _all.TweenMax.fromTo(text, 1.65, {
         opacity: 0,
         y: 500,
+        rotation: 0.01,
         ease: Power2.easeOut
       }, {
         opacity: 1,
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 0.95, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeIn
       }, {
         y: -400,
+        rotation: 0.01,
         ease: Power2.easeIn
       });
     }
@@ -30405,17 +30417,21 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
     if (index === isActive) {
       _all.TweenMax.fromTo(text, 2.3, {
         y: 250,
+        rotation: 0.01,
         ease: Power3.easeOut
       }, {
         y: 0,
+        rotation: 0.01,
         ease: Power3.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(text, 1, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeIn
       }, {
         y: -500,
+        rotation: 0.01,
         ease: Power2.easeIn
       });
     }
@@ -30424,17 +30440,21 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
     if (index === isActive) {
       _all.TweenMax.fromTo(cta, 1.95, {
         y: 450,
+        rotation: 0.01,
         ease: Power3.easeOut
       }, {
         y: 0,
+        rotation: 0.01,
         ease: Power3.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(cta, 1, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeIn
       }, {
         y: -500,
+        rotation: 0.01,
         ease: Power2.easeIn
       });
     }
@@ -30443,17 +30463,21 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
     if (index === isActive) {
       _all.TweenMax.fromTo(cta, 2.3, {
         y: 300,
+        rotation: 0.01,
         ease: Power2.easeOut
       }, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeOut
       });
     } else if (index === wasActive) {
       _all.TweenMax.fromTo(cta, 1.1, {
         y: 0,
+        rotation: 0.01,
         ease: Power2.easeIn
       }, {
         y: -300,
+        rotation: 0.01,
         ease: Power2.easeIn
       });
     }
@@ -30638,7 +30662,7 @@ var filmSlideR = function filmSlideR(item) {
     onComplete: function onComplete() {}
   });
 };
-},{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30665,7 +30689,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52916" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65317" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -30807,5 +30831,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
 //# sourceMappingURL=/src.a2b27638.map

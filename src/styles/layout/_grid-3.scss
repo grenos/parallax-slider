@@ -1,9 +1,9 @@
-.grid2 {
+.grid3 {
 	display: grid;
 	grid-template-columns: 20% 1.5fr 2.5fr 0.5fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr;
 
-	.slide1-img3 {
+	.slide1-img5 {
 		grid-column: 2 / span 1;
 		grid-row: 4 / span 2;
 		background: url("/src/media/images/iphone8.png") left top no-repeat;
@@ -11,7 +11,7 @@
 		z-index: 10;
 	}
 
-	.slide1-img4 {
+	.slide1-img6 {
 		grid-column: 2 / span 4;
 		grid-row: 3 / span 3;
 		background: url("/src/media/images/mac.png") left top no-repeat;
@@ -19,8 +19,8 @@
 	}
 
 	.info {
-		grid-column: 4 / span 3;
-		grid-row: 3 / span 1;
+		grid-column: 2 / span 5;
+		grid-row: 2 / span 1;
 
 		blockquote {
 			color: #333;
@@ -32,8 +32,8 @@
 	}
 
 	.title {
-		grid-column: 4 / span 2;
-		grid-row: 4 / span 1;
+		grid-column: 3 / span 5;
+		grid-row: 6 / span 1;
 
 		h1 {
 			font-family: "inter_extra_bold";
@@ -57,28 +57,28 @@
 	}
 }
 @include large-screen-media {
-	.grid2 {
+	.grid3 {
 		grid-template-columns: 20% 1.5fr 2.5fr 0.5fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr;
 
-		.slide1-img3 {
+		.slide1-img5 {
 			grid-column: 2 / span 1;
 			grid-row: 4 / span 3;
 		}
 
-		.slide1-img4 {
+		.slide1-img6 {
 			grid-column: 2 / span 4;
 			grid-row: 2 / span 4;
 		}
 
 		.info {
-			grid-column: 4 / span 3;
-			grid-row: 3 / span 1;
+			grid-column: 2 / span 5;
+			grid-row: 1 / span 1;
 		}
 
 		.title {
-			grid-column: 4 / span 2;
-			grid-row: 4 / span 1;
+			grid-column: 3 / span 5;
+			grid-row: 6 / span 1;
 		}
 
 		.cta {
@@ -88,16 +88,16 @@
 	}
 }
 @include extra-large-screen-media {
-	.grid2 {
+	.grid3 {
 		grid-template-columns: 20% 1.5fr 2.5fr 0.5fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr;
 
-		.slide1-img3 {
+		.slide1-img5 {
 			grid-column: 2 / span 1;
 			grid-row: 4 / span 4;
 		}
 
-		.slide1-img4 {
+		.slide1-img6 {
 			grid-column: 2 / span 4;
 			grid-row: 3 / span 5;
 		}

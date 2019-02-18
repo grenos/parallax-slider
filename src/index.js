@@ -52,15 +52,15 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 			TweenMax.fromTo(
 				img,
 				1.95,
-				{ y: 400, ease: Power2.easeOut },
-				{ y: 0, ease: Power2.easeOut }
+				{ y: 400, rotation:0.01, ease: Power2.easeOut },
+				{ y: 0, rotation:0.01, ease: Power2.easeOut }
 			);
 		} else if (index === wasActive) {
 			TweenMax.fromTo(
 				img,
 				0.8,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: -600, ease: Power2.easeIn }
+				{ y: 0, rotation:0.01, ease: Power2.easeIn },
+				{ y: -600, rotation:0.01, ease: Power2.easeIn }
 			);
 		}
 	});
@@ -70,15 +70,15 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 			TweenMax.fromTo(
 				img,
 				2.5,
-				{ y: 200, ease: Power2.easeOut },
-				{ y: 0, ease: Power2.easeOut }
+				{ y: 200, rotation:0.01, ease: Power2.easeOut },
+				{ y: 0, rotation:0.01, ease: Power2.easeOut }
 			);
 		} else if (index === wasActive) {
 			TweenMax.fromTo(
 				img,
 				1.1,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: -300, ease: Power2.easeIn }
+				{ y: 0, rotation:0.01, ease: Power2.easeIn },
+				{ y: -300, rotation:0.01, ease: Power2.easeIn }
 			);
 		}
 	});
@@ -88,15 +88,15 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 			TweenMax.fromTo(
 				text,
 				1.65,
-				{ opacity: 0, y: 500, ease: Power2.easeOut },
-				{ opacity: 1, y: 0, ease: Power2.easeOut }
+				{ opacity: 0, y: 500, rotation:0.01, ease: Power2.easeOut },
+				{ opacity: 1, y: 0, rotation:0.01, ease: Power2.easeOut }
 			);
 		} else if (index === wasActive) {
 			TweenMax.fromTo(
 				text,
 				0.95,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: -400, ease: Power2.easeIn }
+				{ y: 0, rotation:0.01, ease: Power2.easeIn },
+				{ y: -400, rotation:0.01, ease: Power2.easeIn }
 			);
 		}
 	});
@@ -106,15 +106,15 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 			TweenMax.fromTo(
 				text,
 				2.3,
-				{ y: 250, ease: Power3.easeOut },
-				{ y: 0, ease: Power3.easeOut }
+				{ y: 250, rotation:0.01, ease: Power3.easeOut },
+				{ y: 0, rotation:0.01, ease: Power3.easeOut }
 			);
 		} else if (index === wasActive) {
 			TweenMax.fromTo(
 				text,
 				1,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: -500, ease: Power2.easeIn }
+				{ y: 0, rotation:0.01, ease: Power2.easeIn },
+				{ y: -500, rotation:0.01, ease: Power2.easeIn }
 			);
 		}
 	});
@@ -124,15 +124,15 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 			TweenMax.fromTo(
 				cta,
 				1.95,
-				{ y: 450, ease: Power3.easeOut },
-				{ y: 0, ease: Power3.easeOut }
+				{ y: 450, rotation:0.01, ease: Power3.easeOut },
+				{ y: 0, rotation:0.01, ease: Power3.easeOut }
 			);
 		} else if (index === wasActive) {
 			TweenMax.fromTo(
 				cta,
 				1,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: -500, ease: Power2.easeIn }
+				{ y: 0, rotation:0.01, ease: Power2.easeIn },
+				{ y: -500, rotation:0.01, ease: Power2.easeIn }
 			);
 		}
 	});
@@ -142,15 +142,15 @@ swiperHorizontal.on("slideNextTransitionStart", function() {
 			TweenMax.fromTo(
 				cta,
 				2.3,
-				{ y: 300, ease: Power2.easeOut },
-				{ y: 0, ease: Power2.easeOut }
+				{ y: 300, rotation:0.01, ease: Power2.easeOut },
+				{ y: 0, rotation:0.01, ease: Power2.easeOut }
 			);
 		} else if (index === wasActive) {
 			TweenMax.fromTo(
 				cta,
 				1.1,
-				{ y: 0, ease: Power2.easeIn },
-				{ y: -300, ease: Power2.easeIn }
+				{ y: 0, rotation:0.01, ease: Power2.easeIn },
+				{ y: -300, rotation:0.01, ease: Power2.easeIn }
 			);
 		}
 	});
