@@ -1,16 +1,29 @@
 .swiper-container-free{
 	height: 100vh;
 	background-color: rgba(0,0,0,.92);
+	width: 100%;
 	.swiper-wrapper{
 		width: 70%;
-
 		.swiper-slide{
 			display: flex;
-			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
 			height: auto;
-			color: white;
 			overflow: visible;
-			text-align: justify;
+			.about__title {
+				font-family: "inter_extra_bold";
+        color: white;
+			}
+
+			.about{
+				font-size: 32px;
+				color: white;
+			}
+
+			.tech{
+				font-size: 28px;
+				color: white;
+			}
 
 		}
 	}

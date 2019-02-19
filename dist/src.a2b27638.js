@@ -30761,7 +30761,32 @@ var swiperFree = new _swiper.default('.swiper-container-free', {
   slidesPerView: 'auto',
   freeMode: true,
   mousewheel: true
+}); // ABOUT ANIMATION ScrollMagic
+
+var controller = new _scrollmagic.default.Controller();
+var story = new _all.TimelineMax().fromTo('.about__title', .7, {
+  y: 120,
+  opacity: 0
+}, {
+  y: 80,
+  opacity: 1
+}, "+=1").fromTo('.about', .5, {
+  y: 180,
+  opacity: 0
+}, {
+  y: 140,
+  opacity: 1
+}).fromTo('.tech', .5, {
+  y: 240,
+  opacity: 0
+}, {
+  y: 200,
+  opacity: 1
 });
+new _scrollmagic.default.Scene({
+  triggerElement: '#trigger-about' // duration: 3000
+
+}).setTween(story).addTo(controller);
 },{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

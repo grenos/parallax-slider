@@ -396,7 +396,6 @@ document.querySelectorAll('.arrow-js').forEach(arrow => {
 
 })
 
-
 // FREE SCROLL SLIDER
 var swiperFree = new Swiper('.swiper-container-free', {
 		direction: 'vertical',
@@ -404,3 +403,20 @@ var swiperFree = new Swiper('.swiper-container-free', {
     freeMode: true,
     mousewheel: true,
 	 });
+
+
+// ABOUT ANIMATION ScrollMagic
+const controller = new ScrollMagic.Controller();
+
+const story = new TimelineMax()
+	.fromTo('.about__title', .7, {y: 120 , opacity: 0}, {y: 80, opacity: 1}, "+=1")
+	.fromTo('.about', .5, {y: 180, opacity: 0}, {y: 140, opacity: 1})
+	.fromTo('.tech', .5, {y: 240, opacity: 0}, {y: 200, opacity: 1});
+
+
+new ScrollMagic.Scene({
+    triggerElement: '#trigger-about',
+    // duration: 3000
+  })
+    .setTween(story)
+    .addTo(controller);
