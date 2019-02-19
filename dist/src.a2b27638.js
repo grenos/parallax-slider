@@ -30327,6 +30327,7 @@ var swiperHorizontal = new _swiper.default(".swiper-container-projects", {
   speed: 1800,
   noSwiping: true,
   simulateTouch: false,
+  slideActiveClass: 'swiper-slide-active-main',
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar"
@@ -30638,9 +30639,6 @@ var slideVH = (_wh * 3.5).toFixed(0);
 
 var slideMovement = (slideVH / horizonatlIndex).toFixed(0);
 var setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
-console.log(horizonatlIndex);
-console.log(slideVH);
-console.log(slideMovement);
 document.addEventListener("DOMContentLoaded", function () {
   setSlideHeight.forEach(function (slide) {
     slide.style.height = slideVH + "px";
@@ -30731,7 +30729,6 @@ document.querySelectorAll('.arrow-js').forEach(function (arrow) {
   });
   swiperHorizontal.on('transitionEnd', function () {
     var isActive = swiperHorizontal.activeIndex;
-    console.log(isActive);
 
     if (isActive === 4) {
       _all.TweenMax.to(arrow, .4, {

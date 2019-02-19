@@ -30,6 +30,7 @@ var swiperHorizontal = new Swiper(".swiper-container-projects", {
 	speed: 1800,
 	noSwiping: true,
 	simulateTouch: false,
+	slideActiveClass: 'swiper-slide-active-main',
 	pagination: {
 		el: ".swiper-pagination",
 		type: "progressbar"
@@ -40,6 +41,7 @@ var swiperHorizontal = new Swiper(".swiper-container-projects", {
 		prevEl: ".swiper-button-prev"
 	}
 });
+
 
 // NEXT SLIDE ANIMATION
 swiperHorizontal.on("slideNextTransitionStart", function() {
@@ -316,10 +318,6 @@ const slideVH = (_wh * 3.5).toFixed(0);
 const slideMovement = (slideVH / horizonatlIndex).toFixed(0);
 const setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
 
-console.log(horizonatlIndex);
-console.log(slideVH);
-console.log(slideMovement);
-
 document.addEventListener("DOMContentLoaded", () => {
 	setSlideHeight.forEach(slide => {
 		slide.style.height = slideVH + "px";
@@ -383,7 +381,6 @@ document.querySelectorAll('.arrow-js').forEach(arrow => {
 
 	swiperHorizontal.on('transitionEnd', () => {
 		const isActive = swiperHorizontal.activeIndex;
-		console.log(isActive);
 			if (isActive === 4){
 				TweenMax.to(arrow, .4, {padding: '10px', x: -10, backgroundColor:'rgba(255,255,255,.35)', borderRadius: '50%'})
 				if (arrow.classList.contains('swiper-button-next')){

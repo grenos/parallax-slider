@@ -1568,3 +1568,11 @@ body, html {
   background: linear-gradient(to top, #ffc371, #ff5f6d) !important;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.swiper-wrapper-js {
+  perspective: 100px;
+}
+
+.slide-js {
+  transition: transform 0.5s;
+}
