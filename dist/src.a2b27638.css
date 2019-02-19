@@ -1450,6 +1450,22 @@ body, html {
   -webkit-text-fill-color: black !important;
 }
 
+.swiper-container-free {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.swiper-container-free .swiper-wrapper {
+  width: 70%;
+}
+.swiper-container-free .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  color: white;
+  overflow: visible;
+  text-align: justify;
+}
+
 .swiper-button-disabled {
   transition: 250ms ease-in opacity;
 }
@@ -1460,7 +1476,7 @@ body, html {
   width: 30px;
   background-size: 30px 30px;
   bottom: 10% !important;
-  transform: rotate(90deg) !important;
+  transform: rotate(90deg);
   left: 3% !important;
   top: unset !important;
 }
@@ -1471,7 +1487,7 @@ body, html {
   width: 30px;
   background-size: 30px 30px;
   top: 10% !important;
-  transform: rotate(90deg) !important;
+  transform: rotate(90deg);
   left: 3%;
   margin-top: unset !important;
 }

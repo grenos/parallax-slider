@@ -311,10 +311,14 @@ var swiperVertical = new Swiper(".swiper-container-name-slider", {
 
 // NAME SLIDER ANIMATION
 // +1 because 1st project-slide is already 'on'
-const horizonatlIndex = swiperHorizontal.slides.length + 1;
+const horizonatlIndex = swiperHorizontal.slides.length + .5;
 const slideVH = (_wh * 3.5).toFixed(0);
 const slideMovement = (slideVH / horizonatlIndex).toFixed(0);
 const setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
+
+console.log(horizonatlIndex);
+console.log(slideVH);
+console.log(slideMovement);
 
 document.addEventListener("DOMContentLoaded", () => {
 	setSlideHeight.forEach(slide => {
@@ -347,7 +351,6 @@ document.querySelectorAll('.cta-js').forEach(cta => {
 	const tl = new TimelineLite({paused:true});
 
 	cta.addEventListener('mouseenter', function () {
-
 		if (this.classList.contains('cta-git')){
 			tl.to(this, .3, {boxShadow: 'inset  0 -100px 0 0 black'}).play();
 		} else {
@@ -368,3 +371,39 @@ document.querySelectorAll('.cta-js').forEach(cta => {
 	})
 
 })
+
+// ARROW ANIMATION
+document.querySelectorAll('.arrow-js').forEach(arrow => {
+
+	const tl2 = new TimelineLite();
+	arrow.addEventListener('click', function () {
+			tl2.fromTo(this, .05, {css:{scale:1}}, {css:{scale:1.15}})
+			.fromTo(this, .05, {css:{scale:1.15}}, {css:{scale:1}})
+	})
+
+	swiperHorizontal.on('transitionEnd', () => {
+		const isActive = swiperHorizontal.activeIndex;
+		console.log(isActive);
+			if (isActive === 4){
+				TweenMax.to(arrow, .4, {padding: '10px', x: -10, backgroundColor:'rgba(255,255,255,.35)', borderRadius: '50%'})
+				if (arrow.classList.contains('swiper-button-next')){
+					arrow.style.display = 'none';
+				}
+			} else if (isActive != 4){
+				TweenMax.to(arrow, .4, {padding: 0, x: 0, backgroundColor:'rgba(255,255,255,.0)', borderRadius: '50%'})
+				if (arrow.classList.contains('swiper-button-next')){
+					arrow.style.display = 'block';
+				}
+			}
+	})
+
+})
+
+
+// FREE SCROLL SLIDER
+var swiperFree = new Swiper('.swiper-container-free', {
+		direction: 'vertical',
+		slidesPerView: 'auto',
+    freeMode: true,
+    mousewheel: true,
+	 });

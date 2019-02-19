@@ -30632,12 +30632,15 @@ var swiperVertical = new _swiper.default(".swiper-container-name-slider", {
 }); // NAME SLIDER ANIMATION
 // +1 because 1st project-slide is already 'on'
 
-var horizonatlIndex = swiperHorizontal.slides.length + 1;
+var horizonatlIndex = swiperHorizontal.slides.length + .5;
 
 var slideVH = (_wh * 3.5).toFixed(0);
 
 var slideMovement = (slideVH / horizonatlIndex).toFixed(0);
 var setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
+console.log(horizonatlIndex);
+console.log(slideVH);
+console.log(slideMovement);
 document.addEventListener("DOMContentLoaded", function () {
   setSlideHeight.forEach(function (slide) {
     slide.style.height = slideVH + "px";
@@ -30703,6 +30706,64 @@ document.querySelectorAll('.cta-js').forEach(function (cta) {
       color: 'black'
     });
   });
+}); // ARROW ANIMATION
+
+document.querySelectorAll('.arrow-js').forEach(function (arrow) {
+  var tl2 = new TimelineLite();
+  arrow.addEventListener('click', function () {
+    tl2.fromTo(this, .05, {
+      css: {
+        scale: 1
+      }
+    }, {
+      css: {
+        scale: 1.15
+      }
+    }).fromTo(this, .05, {
+      css: {
+        scale: 1.15
+      }
+    }, {
+      css: {
+        scale: 1
+      }
+    });
+  });
+  swiperHorizontal.on('transitionEnd', function () {
+    var isActive = swiperHorizontal.activeIndex;
+    console.log(isActive);
+
+    if (isActive === 4) {
+      _all.TweenMax.to(arrow, .4, {
+        padding: '10px',
+        x: -10,
+        backgroundColor: 'rgba(255,255,255,.35)',
+        borderRadius: '50%'
+      });
+
+      if (arrow.classList.contains('swiper-button-next')) {
+        arrow.style.display = 'none';
+      }
+    } else if (isActive != 4) {
+      _all.TweenMax.to(arrow, .4, {
+        padding: 0,
+        x: 0,
+        backgroundColor: 'rgba(255,255,255,.0)',
+        borderRadius: '50%'
+      });
+
+      if (arrow.classList.contains('swiper-button-next')) {
+        arrow.style.display = 'block';
+      }
+    }
+  });
+}); // FREE SCROLL SLIDER
+
+var swiperFree = new _swiper.default('.swiper-container-free', {
+  direction: 'vertical',
+  slidesPerView: 'auto',
+  freeMode: true,
+  mousewheel: true
 });
 },{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
