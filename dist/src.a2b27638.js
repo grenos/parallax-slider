@@ -30671,11 +30671,11 @@ document.querySelectorAll('.cta-js').forEach(function (cta) {
   cta.addEventListener('mouseenter', function () {
     if (this.classList.contains('cta-git')) {
       tl.to(this, .3, {
-        boxShadow: 'inset  0 -3.25em 0 0 black'
+        boxShadow: 'inset  0 -100px 0 0 black'
       }).play();
     } else {
       tl.to(this, .3, {
-        boxShadow: 'inset  0 3.25em 0 0 black'
+        boxShadow: 'inset  0 100px 0 0 black'
       }).play();
     }
 
@@ -30689,11 +30689,11 @@ document.querySelectorAll('.cta-js').forEach(function (cta) {
   cta.addEventListener('mouseleave', function () {
     if (this.classList.contains('cta-git')) {
       tl.to(this, 0, {
-        boxShadow: 'inset  0 -3.25em 0 0 black'
+        boxShadow: 'inset  0 -100px 0 0 black'
       }).reverse();
     } else {
       tl.to(this, 0, {
-        boxShadow: 'inset  0 3.25em 0 0 black'
+        boxShadow: 'inset  0 100px 0 0 black'
       }).reverse();
     }
 

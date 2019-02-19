@@ -349,9 +349,9 @@ document.querySelectorAll('.cta-js').forEach(cta => {
 	cta.addEventListener('mouseenter', function () {
 
 		if (this.classList.contains('cta-git')){
-			tl.to(this, .3, {boxShadow: 'inset  0 -3.25em 0 0 black'}).play();
+			tl.to(this, .3, {boxShadow: 'inset  0 -100px 0 0 black'}).play();
 		} else {
-			tl.to(this, .3, {boxShadow: 'inset  0 3.25em 0 0 black'}).play();
+			tl.to(this, .3, {boxShadow: 'inset  0 100px 0 0 black'}).play();
 		}
 		let text = this.querySelector('p')
 		TweenMax.to(text, .4, {color: 'white'})
@@ -359,9 +359,9 @@ document.querySelectorAll('.cta-js').forEach(cta => {
 	//
 	cta.addEventListener('mouseleave', function () {
 		if (this.classList.contains('cta-git')){
-			tl.to(this, 0, {boxShadow: 'inset  0 -3.25em 0 0 black'}).reverse();
+			tl.to(this, 0, {boxShadow: 'inset  0 -100px 0 0 black'}).reverse();
 		} else {
-			tl.to(this, 0, {boxShadow: 'inset  0 3.25em 0 0 black'}).reverse();
+			tl.to(this, 0, {boxShadow: 'inset  0 100px 0 0 black'}).reverse();
 		}
 		let text = this.querySelector('p')
 		TweenMax.to(text, .4, {color: 'black'})
