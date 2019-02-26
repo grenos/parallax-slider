@@ -382,7 +382,7 @@ document.querySelectorAll('.arrow-js').forEach(arrow => {
 	swiperHorizontal.on('transitionEnd', () => {
 		const isActive = swiperHorizontal.activeIndex;
 			if (isActive === 4){
-				TweenMax.to(arrow, .4, {padding: '10px', x: -10, backgroundColor:'rgba(255,255,255,.35)', borderRadius: '50%'})
+				TweenMax.to(arrow, .4, {padding: '5px', x: -5, backgroundColor:'rgba(255,255,255,.35)', borderRadius: '50%'})
 				if (arrow.classList.contains('swiper-button-next')){
 					arrow.style.display = 'none';
 				}
@@ -409,9 +409,10 @@ var swiperFree = new Swiper('.swiper-container-free', {
 const controller = new ScrollMagic.Controller();
 
 const story = new TimelineMax()
-	.fromTo('.about__title', .7, {y: 120 , opacity: 0}, {y: 80, opacity: 1}, "+=1")
-	.fromTo('.about', .5, {y: 180, opacity: 0}, {y: 140, opacity: 1})
-	.fromTo('.tech', .5, {y: 240, opacity: 0}, {y: 200, opacity: 1});
+	.fromTo('.about__title', .7, {y: 80 , opacity: 0}, {y: 0, opacity: 1}, "+=1")
+	.fromTo('.about', .5, {y: 80, opacity: 0}, {y: 0, opacity: 1})
+	.fromTo('.tech', .5, {y: 80, opacity: 0}, {y: 0, opacity: 1})
+	.fromTo('.social', .5, {y: 80, opacity: 0}, {y: 0, opacity: 1});
 
 
 new ScrollMagic.Scene({

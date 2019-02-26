@@ -56,6 +56,37 @@
 	}
 }
 
+@include tablet-media {
+	.grid1 {
+		display: grid;
+		grid-template-columns: 20% 2fr 1fr 1fr 1fr 8fr 1fr;
+		grid-template-rows: 2fr 2fr 1fr 1fr 1fr 3fr 2fr 2fr 2fr;
+
+		.slide1-img1 {
+			// background: none;
+		}
+
+		.slide1-img2 {
+			// background: none;
+		}
+
+		.info {
+			grid-column: 3 / span 4;
+			grid-row: 6 / span 1;
+		}
+
+		.title {
+			grid-column: 2 / span 6;
+			grid-row: 5 / span 1;
+		}
+
+		.cta {
+			grid-column: 6 / span 1;
+			grid-row: 7 / span 1;
+		}
+	}
+}
+
 @include large-screen-media {
 	.grid1 {
 		display: grid;

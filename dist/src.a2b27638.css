@@ -1155,6 +1155,25 @@ body, html {
   grid-row: 7/span 1;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid1 {
+    display: grid;
+    grid-template-columns: 20% 2fr 1fr 1fr 1fr 8fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr 1fr 1fr 3fr 2fr 2fr 2fr;
+  }
+  .grid1 .info {
+    grid-column: 3/span 4;
+    grid-row: 6/span 1;
+  }
+  .grid1 .title {
+    grid-column: 2/span 6;
+    grid-row: 5/span 1;
+  }
+  .grid1 .cta {
+    grid-column: 6/span 1;
+    grid-row: 7/span 1;
+  }
+}
 @media (min-width: 1536px) {
   .grid1 {
     display: grid;
@@ -1468,14 +1487,35 @@ body, html {
 .swiper-container-free .swiper-wrapper .swiper-slide .about__title {
   font-family: "inter_extra_bold";
   color: white;
+  padding-top: 8.5%;
 }
 .swiper-container-free .swiper-wrapper .swiper-slide .about {
-  font-size: 32px;
-  color: white;
+  font-size: 34px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 3.5%;
 }
 .swiper-container-free .swiper-wrapper .swiper-slide .tech {
   font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 3.5%;
+}
+.swiper-container-free .swiper-wrapper .swiper-slide .tech span {
+  font-family: "inter_extra_bold";
   color: white;
+}
+.swiper-container-free .swiper-wrapper .swiper-slide .social {
+  padding-top: 4.5%;
+  width: 100%;
+}
+.swiper-container-free .swiper-wrapper .swiper-slide .social ion-icon {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 35px;
+  margin: 2% 1%;
+  transition: 0.2s ease-in-out color;
+}
+.swiper-container-free .swiper-wrapper .swiper-slide .social ion-icon:hover {
+  color: white;
+  transition: 0.2s ease-in-out color;
 }
 
 .swiper-button-disabled {

@@ -30732,8 +30732,8 @@ document.querySelectorAll('.arrow-js').forEach(function (arrow) {
 
     if (isActive === 4) {
       _all.TweenMax.to(arrow, .4, {
-        padding: '10px',
-        x: -10,
+        padding: '5px',
+        x: -5,
         backgroundColor: 'rgba(255,255,255,.35)',
         borderRadius: '50%'
       });
@@ -30765,22 +30765,28 @@ var swiperFree = new _swiper.default('.swiper-container-free', {
 
 var controller = new _scrollmagic.default.Controller();
 var story = new _all.TimelineMax().fromTo('.about__title', .7, {
-  y: 120,
+  y: 80,
   opacity: 0
 }, {
-  y: 80,
+  y: 0,
   opacity: 1
 }, "+=1").fromTo('.about', .5, {
-  y: 180,
+  y: 80,
   opacity: 0
 }, {
-  y: 140,
+  y: 0,
   opacity: 1
 }).fromTo('.tech', .5, {
-  y: 240,
+  y: 80,
   opacity: 0
 }, {
-  y: 200,
+  y: 0,
+  opacity: 1
+}).fromTo('.social', .5, {
+  y: 80,
+  opacity: 0
+}, {
+  y: 0,
   opacity: 1
 });
 new _scrollmagic.default.Scene({
@@ -30814,7 +30820,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50376" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54110" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

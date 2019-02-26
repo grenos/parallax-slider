@@ -13,17 +13,39 @@
 			.about__title {
 				font-family: "inter_extra_bold";
         color: white;
+				padding-top: 8.5%;
 			}
 
 			.about{
-				font-size: 32px;
-				color: white;
+				font-size: 34px;
+				color: rgba(#fff,.7);
+				padding-top: 3.5%;
 			}
-
 			.tech{
 				font-size: 28px;
-				color: white;
+				color: rgba(#fff,.7);
+				padding-top: 3.5%;
+				span{
+					font-family: "inter_extra_bold";
+					color: white;
+				}
 			}
+
+			.social{
+				padding-top: 4.5%;
+				width: 100%;
+				ion-icon{
+					color: rgba(#fff,.7);
+					font-size: 35px;
+					margin: 2% 1%;
+					transition: .2s ease-in-out color;
+					&:hover{
+						color: white;
+						transition: .2s ease-in-out color;
+					}
+				}
+			}
+
 
 		}
 	}
