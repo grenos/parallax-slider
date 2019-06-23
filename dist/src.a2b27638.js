@@ -181,7 +181,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/oneplus.png":[["oneplus.410cd10b.png","src/media/images/oneplus.png"],"src/media/images/oneplus.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/iphone.png":[["iphone.19da443c.png","src/media/images/iphone.png"],"src/media/images/iphone.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/iphone8.png":[["iphone8.2f2f0dc5.png","src/media/images/iphone8.png"],"src/media/images/iphone8.png"],"/Users/vasilisgreen/Desktop/parallax-slider/src/media/images/mac.png":[["mac.7f5152d3.png","src/media/images/mac.png"],"src/media/images/mac.png"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
+},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
 // disable hover on touch screens
 function hasTouch() {
   return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -29553,7 +29553,60 @@ var define;
     };
   });
 });
-},{"gsap":"node_modules/gsap/index.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"}],"src/index.js":[function(require,module,exports) {
+},{"gsap":"node_modules/gsap/index.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"}],"src/scripts/fitText.js":[function(require,module,exports) {
+/*!	
+* FitText.js 1.0 jQuery free version
+*
+* Copyright 2011, Dave Rupert http://daverupert.com 
+* Released under the WTFPL license 
+* http://sam.zoy.org/wtfpl/
+* Modified by Slawomir Kolodziej http://slawekk.info
+*
+* Date: Tue Aug 09 2011 10:45:54 GMT+0200 (CEST)
+*/
+(function () {
+  var addEvent = function addEvent(el, type, fn) {
+    if (el.addEventListener) el.addEventListener(type, fn, false);else el.attachEvent('on' + type, fn);
+  };
+
+  var extend = function extend(obj, ext) {
+    for (var key in ext) {
+      if (ext.hasOwnProperty(key)) obj[key] = ext[key];
+    }
+
+    return obj;
+  };
+
+  window.fitText = function (el, kompressor, options) {
+    var settings = extend({
+      'minFontSize': -1 / 0,
+      'maxFontSize': 1 / 0
+    }, options);
+
+    var fit = function fit(el) {
+      var compressor = kompressor || 1;
+
+      var resizer = function resizer() {
+        el.style.fontSize = Math.max(Math.min(el.clientHeight / (compressor * 10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)) + 'px';
+      }; // Call once to set.
+
+
+      resizer(); // Bind events
+      // If you have any js library which support Events, replace this part
+      // and remove addEvent function (or use original jQuery version)
+
+      addEvent(window, 'resize', resizer);
+      addEvent(window, 'orientationchange', resizer);
+    };
+
+    if (el.length) for (var i = 0; i < el.length; i++) {
+      fit(el[i]);
+    } else fit(el); // return set of elements
+
+    return el;
+  };
+})();
+},{}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 require("./index.scss");
@@ -29567,6 +29620,8 @@ var _all = require("gsap/all");
 var _scrollmagic = _interopRequireDefault(require("scrollmagic"));
 
 var _animation = _interopRequireDefault(require("../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap"));
+
+var _fitText = _interopRequireDefault(require("../src/scripts/fitText"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29892,23 +29947,19 @@ var swiperVertical = new _swiper.default(".swiper-container-name-slider", {
   simulateTouch: false,
   spaceBetween: 0
 }); // NAME SLIDER ANIMATION
-// +1 because 1st project-slide is already 'on'
 
-var horizonatlIndex = swiperHorizontal.slides.length + .5;
+var horizonatlIndex = swiperHorizontal.slides.length;
 
-var slideVH = (_wh * 3.5).toFixed(0);
+var slideVH = (_wh * horizonatlIndex).toFixed(0);
 
 var slideMovement = (slideVH / horizonatlIndex).toFixed(0);
-var setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
+var setSlideHeight = document.querySelector(".swiper-slide-name-slider");
+var nameFontSize = document.querySelector(".swiper-slide-name-slider h1");
 document.addEventListener("DOMContentLoaded", function () {
-  setSlideHeight.forEach(function (slide) {
-    slide.style.height = slideVH + "px";
-  });
+  setSlideHeight.style.height = slideVH + "px";
 });
 window.addEventListener("resize", function () {
-  setSlideHeight.forEach(function (slide) {
-    slide.style.height = slideVH + "px";
-  });
+  setSlideHeight.style.height = slideVH + "px";
 });
 
 var filmSlideF = function filmSlideF(item) {
@@ -30077,7 +30128,7 @@ var story = new _all.TimelineMax().fromTo('.about__title', .2, {
 new _scrollmagic.default.Scene({
   triggerElement: '#trigger-about'
 }).setTween(story).addTo(controller);
-},{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../src/scripts/fitText":"src/scripts/fitText.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30104,7 +30155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56610" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61317" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

@@ -6,10 +6,7 @@
     width: 70%;
 
     .swiper-slide {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
+      @include flex-box(column, null, center, flex-start, );
       height: auto;
       overflow: visible;
 
@@ -85,3 +82,95 @@
     transition: 0.4s;
   }
 }
+
+@include desk-1366 {
+  .swiper-container-free {
+    .swiper-wrapper {
+      .swiper-slide {
+        .about {
+          font-size: 38px;
+        }
+
+        .tech {
+          font-size: 22px;
+
+          span {
+            font-size: 24px;
+          }
+
+          ul {
+            li {
+              i {}
+            }
+          }
+        }
+
+        .social {
+          padding-top: 5%;
+          width: 100%;
+
+          ion-icon {
+            font-size: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include desk-1920 {
+  .swiper-container-free {
+    .swiper-wrapper {
+      .swiper-slide {
+        .about__title {
+          font-size: 38px;
+        }
+
+        .about {
+          font-size: 58px;
+        }
+
+        .tech {
+          font-size: 28px;
+
+          span {
+            font-size: 28px;
+          }
+
+          ul {
+            li {
+              i {}
+            }
+          }
+        }
+
+        .social {
+          padding-top: 5%;
+          width: 100%;
+
+          ion-icon {
+            font-size: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include phone-320 {}
+
+@include phone-668 {}
+
+@include tab-768 {}
+
+@include tab-1024 {}
+
+@include desk-1366 {}
+
+@include desk-1536 {}
+
+@include desk-1920 {}
+
+@include desk-2560 {}

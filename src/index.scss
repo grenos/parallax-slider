@@ -39,11 +39,8 @@
     align-items: center;
   }
 }
-// .swiper-slide-active {
-//   background: thistle;
-// }
 
-.swiper-container-vertical > .swiper-pagination-progressbar {
+.swiper-container-vertical>.swiper-pagination-progressbar {
   width: 6px !important;
   right: 0 !important;
   left: auto !important;
@@ -60,9 +57,10 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.swiper-wrapper-js {
-  perspective: 100px;
-}
-.slide-js {
-  transition: transform 0.5s;
-}
+// .swiper-wrapper-js {
+  //   perspective: 100px;
+  // }
+
+  // .slide-js {
+  //   transition: transform 0.5s;
+  // }

@@ -1,13 +1,14 @@
 import "./index.scss";
 import "./scripts/helpers";
 
+
 //libraries
 import Swiper from "swiper";
 import { TweenMax, TimelineMax, CSSPlugin } from "gsap/all";
 const plugins = [TweenMax, TimelineMax, CSSPlugin];
 import ScrollMagic from "scrollmagic";
 import animation from "../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap";
-
+import fitText from '../src/scripts/fitText'
 
 // import js module files
 // import './scripts/animations/videoModal';
@@ -312,25 +313,23 @@ swiperHorizontal.on("slideChangeTransitionEnd", function () {
 var swiperVertical = new Swiper(".swiper-container-name-slider", {
 	direction: "vertical",
 	simulateTouch: false,
-	spaceBetween: 0
+	spaceBetween: 0,
 });
 
 // NAME SLIDER ANIMATION
-// +1 because 1st project-slide is already 'on'
-const horizonatlIndex = swiperHorizontal.slides.length + .5;
-const slideVH = (_wh * 3.5).toFixed(0);
+const horizonatlIndex = swiperHorizontal.slides.length;
+const slideVH = (_wh * horizonatlIndex).toFixed(0);
+
 const slideMovement = (slideVH / horizonatlIndex).toFixed(0);
-const setSlideHeight = document.querySelectorAll(".swiper-slide-name-slider");
+const setSlideHeight = document.querySelector(".swiper-slide-name-slider");
+const nameFontSize = document.querySelector(".swiper-slide-name-slider h1");
 
 document.addEventListener("DOMContentLoaded", () => {
-	setSlideHeight.forEach(slide => {
-		slide.style.height = slideVH + "px";
-	});
+	setSlideHeight.style.height = slideVH + "px";
 });
 window.addEventListener("resize", () => {
-	setSlideHeight.forEach(slide => {
-		slide.style.height = slideVH + "px";
-	});
+	setSlideHeight.style.height = slideVH + "px";
+
 });
 
 const filmSlideF = item => {

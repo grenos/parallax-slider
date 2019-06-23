@@ -1,33 +1,18 @@
 //! Font-Face
-@mixin font-face(
-  $name,
-  $path,
-  $weight: null,
-  $style: null,
-  $exts: woff2 woff ttf
-) {
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: woff2 woff ttf) {
   $src: null;
-  $extmods: (
-    eot: "?",
-    svg: "#" + str-replace($name, " ", "_")
-  );
-  $formats: (
-    otf: "opentype",
+  $extmods: (eot: "?",
+    svg: "#"+ str-replace($name, " ", "_"));
+  $formats: (otf: "opentype",
     ttf: "truetype"
-  );
+    );
+
   @each $ext in $exts {
-    $extmod: if(
-      map-has-key($extmods, $ext),
-      $ext + map-get($extmods, $ext),
-      $ext
-    );
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
     $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-    $src: append(
-      $src,
-      url(quote($path + "." + $extmod)) format(quote($format)),
-      comma
-    );
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
   }
+
   @font-face {
     font-family: quote($name);
     font-style: $style;
@@ -37,50 +22,97 @@
 }
 
 //! flexbox
-@mixin flex-box($display, $direction, $wrap, $justify, $align) {
-  display: $display;
+@mixin flex-box($direction,
+$wrap,
+$justify,
+$align) {
+  display: flex;
   flex-direction: $direction;
   flex-wrap: $wrap;
   justify-content: $justify;
   align-items: $align;
 }
 
+//! first nth child
+@mixin first($num) {
+  @if $num==1 {
+    &:first-child {
+      @content;
+    }
+  }
+
+  @else {
+    &:nth-child(-n+#{$num}) {
+      @content;
+    }
+  }
+}
+
+//! last nth child
+@mixin last($num) {
+  &:nth-last-child(-n+#{$num}) {
+    @content;
+  }
+}
+
+//! every nth child
+@mixin each($num) {
+  &:nth-child(#{$num}n) {
+    @content;
+  }
+}
+
+@mixin otherEach($num) {
+  &:nth-child(#{$num}n+1) {
+    @content;
+  }
+}
+
 //! @media
-@mixin small-phone-media {
-  @media (min-width: #{$small-phones-width}) and (max-width: #{$plus-phones-width - 1px}) {
+@mixin phone-320 {
+  @media (max-width: #{$_320}) {
     @content;
   }
 }
 
-@mixin plus-phone-media {
-  @media (min-width: #{$plus-phones-width}) and (max-width: #{$ipad-width - 1px}) {
+@mixin phone-668 {
+  @media (max-width: #{$_668}) {
     @content;
   }
 }
 
-@mixin tablet-media {
-  @media (min-width: #{$ipad-width}) and (max-width: #{$ipad-pro-width}) {
+@mixin tab-768 {
+  @media (max-width: #{$_768}) {
     @content;
   }
 }
 
-// 1366 - 1536
-@mixin medium-screen-media {
-  @media (min-width: #{$small-pc-width}) and (max-width: #{$medium-pc-width}) {
+@mixin tab-1024 {
+  @media (max-width: #{$_1024}) {
     @content;
   }
 }
 
-// 1536 - 1920
-@mixin large-screen-media {
-  @media (min-width: #{$medium-pc-width}) {
+@mixin desk-1366 {
+  @media (max-width: #{$_1366}) {
     @content;
   }
 }
 
-// 1920 - 2560
-@mixin extra-large-screen-media {
-  @media (min-width: #{$x-large-pc-width}) {
+@mixin desk-1536 {
+  @media (max-width: #{$_1536}) {
+    @content;
+  }
+}
+
+@mixin desk-1920 {
+  @media (max-width: #{$_1920}) {
+    @content;
+  }
+}
+
+@mixin desk-2560 {
+  @media (max-width: #{$_2560}) {
     @content;
   }
 }

@@ -1,5 +1,5 @@
 .cta{
-	@include flex-box(flex, null, null, center, center);
+	@include flex-box(null, null, center, center);
 	.cta-web{
 		margin: 0 15px;
 		a{
