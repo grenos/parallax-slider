@@ -1471,7 +1471,6 @@ body, html {
 
 .swiper-container-free {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.92);
   width: 100%;
 }
 .swiper-container-free .swiper-wrapper {
@@ -1481,30 +1480,41 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   height: auto;
   overflow: visible;
 }
 .swiper-container-free .swiper-wrapper .swiper-slide .about__title {
   font-family: "inter_extra_bold";
   color: white;
-  padding-top: 8.5%;
+  padding-top: 5%;
 }
 .swiper-container-free .swiper-wrapper .swiper-slide .about {
-  font-size: 34px;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.7);
-  padding-top: 3.5%;
 }
 .swiper-container-free .swiper-wrapper .swiper-slide .tech {
-  font-size: 28px;
-  color: rgba(255, 255, 255, 0.7);
-  padding-top: 3.5%;
+  padding-top: 5%;
 }
 .swiper-container-free .swiper-wrapper .swiper-slide .tech span {
   font-family: "inter_extra_bold";
   color: white;
+  font-size: 20px;
+}
+.swiper-container-free .swiper-wrapper .swiper-slide .tech ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.swiper-container-free .swiper-wrapper .swiper-slide .tech ul li {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 10px 0;
+}
+.swiper-container-free .swiper-wrapper .swiper-slide .tech ul li i {
+  font-family: "inter_extra_bold";
+  letter-spacing: 1px;
 }
 .swiper-container-free .swiper-wrapper .swiper-slide .social {
-  padding-top: 4.5%;
+  padding-top: 5%;
   width: 100%;
 }
 .swiper-container-free .swiper-wrapper .swiper-slide .social ion-icon {
@@ -1516,6 +1526,18 @@ body, html {
 .swiper-container-free .swiper-wrapper .swiper-slide .social ion-icon:hover {
   color: white;
   transition: 0.2s ease-in-out color;
+}
+
+.strip {
+  width: 10%;
+  background-color: rgba(0, 0, 0, 0.92);
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+}
+.strip.active {
+  height: 100%;
+  transition: 0.4s;
 }
 
 .swiper-button-disabled {
