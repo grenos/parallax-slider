@@ -5,7 +5,7 @@
 
   .swiper-slide-name-slider {
     height: 0; //must be 0 on-load
-    @include flex-box(null, null, center, flex-start, );
+    @include flex-box(null, null, center, flex-start);
     background-color: transparent;
     margin-top: 15px;
 
@@ -14,7 +14,7 @@
         font-family: "inter_extra_bold";
         writing-mode: vertical-rl;
         text-orientation: sideways;
-        font-size: 29vh;
+        font-size: 24vh;
         margin: auto;
         color: black;
         -webkit-text-fill-color: rgba(186, 188, 194, 0);
@@ -31,12 +31,14 @@
   }
 }
 
+@include phone-320 {
+}
 
-@include phone-320 {}
+@include phone-668 {
+}
 
-@include phone-668 {}
-
-@include tab-768 {}
+@include tab-768 {
+}
 
 @include tab-1024 {
   .swiper-container-name-slider {
@@ -46,16 +48,17 @@
 
     .swiper-slide-name-slider {
       height: 0; //must be 0 on-load
-      @include flex-box(null, null, center, flex-start, );
+      @include flex-box(null, null, center, flex-start);
       background-color: transparent;
       margin-top: 15px;
 
       .swiper-slide-name-slider__inner {
         h1 {
+          line-height: 0;
           font-family: "inter_extra_bold";
           writing-mode: vertical-rl;
           text-orientation: sideways;
-          font-size: 15vh;
+          font-size: 10vh;
           margin: auto;
           color: black;
           -webkit-text-fill-color: rgba(186, 188, 194, 0);
@@ -73,10 +76,14 @@
   }
 }
 
-@include desk-1366 {}
+@include desk-1366 {
+}
 
-@include desk-1536 {}
+@include desk-1536 {
+}
 
-@include desk-1920 {}
+@include desk-1920 {
+}
 
-@include desk-2560 {}
+@include desk-2560 {
+}

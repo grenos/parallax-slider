@@ -104,7 +104,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -136,7 +136,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -171,17 +171,17 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/swiper/dist/css/swiper.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/swiper/dist/css/swiper.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/index.scss":[function(require,module,exports) {
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/index.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
+},{"../node_modules/swiper/dist/css/swiper.css":"node_modules/swiper/dist/css/swiper.css","./media/fonts/Inter-Black.woff2":[["Inter-Black.1a7bd339.woff2","src/media/fonts/Inter-Black.woff2"],"src/media/fonts/Inter-Black.woff2"],"./media/fonts/Inter-Black.woff":[["Inter-Black.30836d95.woff","src/media/fonts/Inter-Black.woff"],"src/media/fonts/Inter-Black.woff"],"./media/fonts/Inter-Black.ttf":[["Inter-Black.98b543f0.ttf","src/media/fonts/Inter-Black.ttf"],"src/media/fonts/Inter-Black.ttf"],"./media/fonts/Inter-Bold.woff2":[["Inter-Bold.e6c36426.woff2","src/media/fonts/Inter-Bold.woff2"],"src/media/fonts/Inter-Bold.woff2"],"./media/fonts/Inter-Bold.woff":[["Inter-Bold.bdcddca7.woff","src/media/fonts/Inter-Bold.woff"],"src/media/fonts/Inter-Bold.woff"],"./media/fonts/Inter-Bold.ttf":[["Inter-Bold.902568dc.ttf","src/media/fonts/Inter-Bold.ttf"],"src/media/fonts/Inter-Bold.ttf"],"./media/fonts/Inter-ExtraBold.woff2":[["Inter-ExtraBold.8f7f3b71.woff2","src/media/fonts/Inter-ExtraBold.woff2"],"src/media/fonts/Inter-ExtraBold.woff2"],"./media/fonts/Inter-ExtraBold.woff":[["Inter-ExtraBold.e312a7d7.woff","src/media/fonts/Inter-ExtraBold.woff"],"src/media/fonts/Inter-ExtraBold.woff"],"./media/fonts/Inter-ExtraBold.ttf":[["Inter-ExtraBold.9f2ba180.ttf","src/media/fonts/Inter-ExtraBold.ttf"],"src/media/fonts/Inter-ExtraBold.ttf"],"./media/fonts/Inter-Regular.woff2":[["Inter-Regular.a93c5bdd.woff2","src/media/fonts/Inter-Regular.woff2"],"src/media/fonts/Inter-Regular.woff2"],"./media/fonts/Inter-Regular.woff":[["Inter-Regular.84a4f589.woff","src/media/fonts/Inter-Regular.woff"],"src/media/fonts/Inter-Regular.woff"],"./media/fonts/Inter-Regular.ttf":[["Inter-Regular.c0a7eebf.ttf","src/media/fonts/Inter-Regular.ttf"],"src/media/fonts/Inter-Regular.ttf"],"./media/images/next.png":[["next.5ad9bd49.png","src/media/images/next.png"],"src/media/images/next.png"],"./media/images/back.png":[["back.cbf55398.png","src/media/images/back.png"],"src/media/images/back.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scripts/helpers.js":[function(require,module,exports) {
 // disable hover on touch screens
 function hasTouch() {
   return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -29798,12 +29798,8 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
         ease: Power2.easeIn
       });
     }
-  }); // move name slider
-
-  var slideF = document.querySelectorAll(".swiper-slide-name-slider");
-  slideF.forEach(function (item) {
-    filmSlideF(item);
   });
+  filmSlideF();
 }); // PREVIOUS SLIDE ANIMATION
 
 swiperHorizontal.on("slidePrevTransitionStart", function () {
@@ -29924,12 +29920,8 @@ swiperHorizontal.on("slidePrevTransitionStart", function () {
         ease: Power2.easeIn
       });
     }
-  }); //move name slider
-
-  var slideR = document.querySelectorAll(".swiper-slide-name-slider");
-  slideR.forEach(function (item) {
-    filmSlideR(item);
   });
+  filmSlideR();
 }); // DISABLE BUTTON ON DURING CHANGE
 
 swiperHorizontal.on("slideChangeTransitionStart", function () {
@@ -29948,29 +29940,35 @@ var swiperVertical = new _swiper.default(".swiper-container-name-slider", {
   spaceBetween: 0
 }); // NAME SLIDER ANIMATION
 
-var horizonatlIndex = swiperHorizontal.slides.length;
-
-var slideVH = (_wh * horizonatlIndex).toFixed(0);
-
-var slideMovement = (slideVH / horizonatlIndex).toFixed(0);
-var setSlideHeight = document.querySelector(".swiper-slide-name-slider");
-var nameFontSize = document.querySelector(".swiper-slide-name-slider h1");
+var slideMovement;
 document.addEventListener("DOMContentLoaded", function () {
-  setSlideHeight.style.height = slideVH + "px";
+  var nameSliderSlide = document.querySelector(".swiper-slide-name-slider__inner");
+  var nameSliderHeight = nameSliderSlide.offsetHeight;
+  var horizonatlIndex = swiperHorizontal.slides.length;
+  slideMovement = nameSliderHeight / horizonatlIndex;
+  console.log(nameSliderHeight);
+  console.log(horizonatlIndex);
+  console.log(slideMovement);
 });
 window.addEventListener("resize", function () {
-  setSlideHeight.style.height = slideVH + "px";
+  var nameSliderSlide = document.querySelector(".swiper-slide-name-slider__inner");
+  var nameSliderHeight = nameSliderSlide.offsetHeight;
+  var horizonatlIndex = swiperHorizontal.slides.length;
+  slideMovement = nameSliderHeight / horizonatlIndex;
 });
+var slideR = document.querySelector(".swiper-slide-name-slider");
 
-var filmSlideF = function filmSlideF(item) {
-  _all.TweenMax.to(item, 1.8, {
+var filmSlideF = function filmSlideF() {
+  _all.TweenMax.to(slideR, 1.8, {
     y: "-=".concat(slideMovement),
     onComplete: function onComplete() {}
   });
 };
 
-var filmSlideR = function filmSlideR(item) {
-  _all.TweenMax.to(item, 1.8, {
+var slideF = document.querySelector(".swiper-slide-name-slider");
+
+var filmSlideR = function filmSlideR() {
+  _all.TweenMax.to(slideF, 1.8, {
     y: "+=".concat(slideMovement),
     onComplete: function onComplete() {}
   });
@@ -30128,7 +30126,7 @@ var story = new _all.TimelineMax().fromTo('.about__title', .2, {
 new _scrollmagic.default.Scene({
   triggerElement: '#trigger-about'
 }).setTween(story).addTo(controller);
-},{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../src/scripts/fitText":"src/scripts/fitText.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./index.scss":"src/index.scss","./scripts/helpers":"src/scripts/helpers.js","swiper":"node_modules/swiper/dist/js/swiper.esm.bundle.js","gsap/all":"node_modules/gsap/all.js","scrollmagic":"node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","../src/scripts/fitText":"src/scripts/fitText.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30155,7 +30153,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61317" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51065" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -30297,5 +30295,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
 //# sourceMappingURL=/src.a2b27638.map

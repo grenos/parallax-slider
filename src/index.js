@@ -157,11 +157,7 @@ swiperHorizontal.on("slideNextTransitionStart", function () {
 		}
 	});
 
-	// move name slider
-	const slideF = document.querySelectorAll(".swiper-slide-name-slider");
-	slideF.forEach(item => {
-		filmSlideF(item);
-	});
+	filmSlideF();
 });
 
 // PREVIOUS SLIDE ANIMATION
@@ -277,11 +273,7 @@ swiperHorizontal.on("slidePrevTransitionStart", function () {
 		}
 	});
 
-	//move name slider
-	const slideR = document.querySelectorAll(".swiper-slide-name-slider");
-	slideR.forEach(item => {
-		filmSlideR(item);
-	});
+	filmSlideR();
 });
 
 // DISABLE BUTTON ON DURING CHANGE
@@ -317,30 +309,38 @@ var swiperVertical = new Swiper(".swiper-container-name-slider", {
 });
 
 // NAME SLIDER ANIMATION
-const horizonatlIndex = swiperHorizontal.slides.length;
-const slideVH = (_wh * horizonatlIndex).toFixed(0);
 
-const slideMovement = (slideVH / horizonatlIndex).toFixed(0);
-const setSlideHeight = document.querySelector(".swiper-slide-name-slider");
-const nameFontSize = document.querySelector(".swiper-slide-name-slider h1");
-
+let slideMovement
 document.addEventListener("DOMContentLoaded", () => {
-	setSlideHeight.style.height = slideVH + "px";
-});
+	const nameSliderSlide = document.querySelector(".swiper-slide-name-slider__inner");
+	const nameSliderHeight = nameSliderSlide.offsetHeight
+	const horizonatlIndex = swiperHorizontal.slides.length;
+	slideMovement = (nameSliderHeight / horizonatlIndex);
+	console.log(nameSliderHeight);
+	console.log(horizonatlIndex);
+	console.log(slideMovement);
+
+})
+
 window.addEventListener("resize", () => {
-	setSlideHeight.style.height = slideVH + "px";
+	const nameSliderSlide = document.querySelector(".swiper-slide-name-slider__inner");
+	const nameSliderHeight = nameSliderSlide.offsetHeight
+	const horizonatlIndex = swiperHorizontal.slides.length;
+	slideMovement = (nameSliderHeight / horizonatlIndex);
+})
 
-});
 
-const filmSlideF = item => {
-	TweenMax.to(item, 1.8, {
+const slideR = document.querySelector(".swiper-slide-name-slider");
+const filmSlideF = () => {
+	TweenMax.to(slideR, 1.8, {
 		y: `-=${slideMovement}`,
 		onComplete: function () { }
 	});
 };
 
-const filmSlideR = item => {
-	TweenMax.to(item, 1.8, {
+const slideF = document.querySelector(".swiper-slide-name-slider");
+const filmSlideR = () => {
+	TweenMax.to(slideF, 1.8, {
 		y: `+=${slideMovement}`,
 		onComplete: function () { }
 	});

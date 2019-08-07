@@ -1313,7 +1313,7 @@ html {
   font-family: "inter_extra_bold";
   writing-mode: vertical-rl;
   text-orientation: sideways;
-  font-size: 29vh;
+  font-size: 24vh;
   margin: auto;
   color: black;
   -webkit-text-fill-color: rgba(186, 188, 194, 0);
@@ -1341,10 +1341,11 @@ html {
     margin-top: 15px;
   }
   .swiper-container-name-slider .swiper-slide-name-slider .swiper-slide-name-slider__inner h1 {
+    line-height: 0;
     font-family: "inter_extra_bold";
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    font-size: 15vh;
+    font-size: 10vh;
     margin: auto;
     color: black;
     -webkit-text-fill-color: rgba(186, 188, 194, 0);
