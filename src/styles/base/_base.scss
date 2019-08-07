@@ -1,11 +1,12 @@
 @import "./colors";
 @import "./typography";
 
-body,html {
+body,
+html {
   font-family: "inter_regular";
-	-webkit-font-smoothing: antialiased;
-	position: relative;
-	height: 100%;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
 }
 
 * {
@@ -18,5 +19,6 @@ body,html {
   --container-width: 15vw;
   --container-height: 100vh;
   --font1-sizeVW: 20vh;
+  --font2-sizeVW: 10vh;
   --font1-sizeVH: calc(var(--ratio) * 15vw);
 }

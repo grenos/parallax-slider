@@ -20,56 +20,47 @@
 @import "./styles/components/button__cta";
 
 .slider-wrapper {
-	background-color: rgba(237, 237, 237, 0.71);
-	height: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	position: relative;
+  background-color: rgba(237, 237, 237, 0.71);
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
 }
 
 .swiper-container-projects {
-	margin: 0;
-	width: 85%;
-	height: 100%;
+  margin: 0;
+  width: 85%;
+  height: 100%;
 
-	.swiper-slide {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-// .swiper-slide-active {
-//   background: thistle;
-// }
 
-.swiper-container-vertical > .swiper-pagination-progressbar {
-	width: 6px !important;
-	right: 0 !important;
-	left: auto !important;
+.swiper-container-vertical>.swiper-pagination-progressbar {
+  width: 6px !important;
+  right: 0 !important;
+  left: auto !important;
 }
 
 .swiper-pagination-progressbar {
-	background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .swiper-pagination-progressbar-fill {
-	background: -webkit-linear-gradient(to top, #ffc371, #ff5f6d) !important;
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #ffc371, #ff5f6d) !important;
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #ffc371, #ff5f6d) !important;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffc371, #ff5f6d) !important;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// .swiper-wrapper-js {
+  //   perspective: 100px;
+  // }
 
-
-.swiper-wrapper-js{
-	perspective: 100px;
-}
-.slide-js{
-	transition: transform 0.5s;
-}
-
-.grid1{
-	// background-color: pink;
-
-}
+  // .slide-js {
+  //   transition: transform 0.5s;
+  // }
