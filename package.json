@@ -12,7 +12,7 @@
   "description": "A parcel starting point with a bunch of libraries",
   "devDependencies": {
     "autoprefixer": "^9.4.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cssnano": "^4.1.8",
     "gsap": "^2.0.2",
     "parcel-plugin-compress": "^1.0.7",
